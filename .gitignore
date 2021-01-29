@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 src/svgspritestemp/*.svg
 src/css/*.css
+npmtask.code-workspace
