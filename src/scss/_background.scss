@@ -1,0 +1,46 @@
+$cfg: (
+	(
+		// background_color
+		values: cfg(colours, $sassy),
+		rules: (
+			bg-: (
+				vrules: (
+					background-color,
+				),
+			),
+		)
+	),
+	(
+		// position
+		values:
+			(
+				center: center center,
+				top: top center,
+				right: center right,
+				left: center left,
+				bottom: bottom center,
+			),
+		rules: (
+			bg-: (
+				vrules: (
+					background-position,
+				),
+			),
+		)
+	),
+	(
+		//size:
+		values:
+			(
+				cover: "cover !important",
+				contain: "contain !important",
+			),
+		rules: (
+			"": (
+				vrules: (
+					background-size,
+				),
+			),
+		)
+	)
+);

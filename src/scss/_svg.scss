@@ -1,0 +1,29 @@
+$cfg: (
+	(
+		// colors
+		values: cfg(colours, $sassy),
+		rules: (
+			fill-: (
+				vrules: (
+					fill,
+				),
+			),
+			stroke-: (
+				vrules: (
+					stroke,
+				),
+			),
+		)
+	),
+	(
+		// stroke_width
+		values: cfg(svg_stroke_widths, $sassy),
+		rules: (
+			stroke-: (
+				vrules: (
+					stroke-width,
+				),
+			),
+		)
+	)
+);

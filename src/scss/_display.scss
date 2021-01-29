@@ -1,0 +1,52 @@
+.dn#{$sfx} {
+	display: none;
+}
+
+.di#{$sfx} {
+	display: inline;
+}
+
+.db#{$sfx} {
+	display: block;
+}
+
+.dib#{$sfx} {
+	display: inline-block;
+}
+
+.dit#{$sfx} {
+	display: inline-table;
+}
+
+.dt#{$sfx} {
+	display: table;
+}
+
+.dtc#{$sfx} {
+	display: table-cell;
+}
+
+.dt-row#{$sfx} {
+	display: table-row;
+}
+
+.dt-row-group#{$sfx} {
+	display: table-row-group;
+}
+
+.dt-column#{$sfx} {
+	display: table-column;
+}
+
+.dt-column-group#{$sfx} {
+	display: table-column-group;
+}
+
+/*
+    This will set table to full width and then
+    all cells will be equal width
+  */
+.dt--fixed#{$sfx} {
+	table-layout: fixed;
+	width: 100%;
+}

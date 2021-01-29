@@ -1,0 +1,16 @@
+$cfg: (
+    (
+        // maxwidths: 
+        values: cfg(max_widths, $sassy),
+        rules: (
+            mw: (vrules: (max-width,),),
+        )
+    ),
+    (
+        // widths: 
+        values: cfg(widths, $sassy),
+        rules: (
+            w-: (vrules: (width,),),
+        )
+    ),
+);

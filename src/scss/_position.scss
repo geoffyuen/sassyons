@@ -1,0 +1,107 @@
+.static#{$sfx} {
+	position: static;
+}
+
+.relative#{$sfx} {
+	position: relative;
+}
+
+.absolute#{$sfx} {
+	position: absolute;
+}
+
+.fixed#{$sfx} {
+	position: fixed;
+}
+
+.top-0#{$sfx} {
+	top: 0;
+}
+
+.right-0#{$sfx} {
+	right: 0;
+}
+
+.bottom-0#{$sfx} {
+	bottom: 0;
+}
+
+.left-0#{$sfx} {
+	left: 0;
+}
+
+.top-1#{$sfx} {
+	top: 1rem;
+}
+
+.right-1#{$sfx} {
+	right: 1rem;
+}
+
+.bottom-1#{$sfx} {
+	bottom: 1rem;
+}
+
+.left-1#{$sfx} {
+	left: 1rem;
+}
+
+.top-2#{$sfx} {
+	top: 2rem;
+}
+
+.right-2#{$sfx} {
+	right: 2rem;
+}
+
+.bottom-2#{$sfx} {
+	bottom: 2rem;
+}
+
+.left-2#{$sfx} {
+	left: 2rem;
+}
+
+.top--1#{$sfx} {
+	top: -1rem;
+}
+
+.right--1#{$sfx} {
+	right: -1rem;
+}
+
+.bottom--1#{$sfx} {
+	bottom: -1rem;
+}
+
+.left--1#{$sfx} {
+	left: -1rem;
+}
+
+.top--2#{$sfx} {
+	top: -2rem;
+}
+
+.right--2#{$sfx} {
+	right: -2rem;
+}
+
+.bottom--2#{$sfx} {
+	bottom: -2rem;
+}
+
+.left--2#{$sfx} {
+	left: -2rem;
+}
+
+.left-50#{$sfx} {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.absolute--fill#{$sfx} {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

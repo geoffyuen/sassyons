@@ -1,0 +1,126 @@
+$cfg: (
+	(
+		// whitespace:
+		values: cfg(whitespace, $sassy),
+		rules: (
+			pa: (
+				vrules: (
+					padding-top,
+					padding-bottom,
+					padding-left,
+					padding-right,
+				),
+			),
+			pv: (
+				vrules: (
+					padding-top,
+					padding-bottom,
+				),
+			),
+			ph: (
+				vrules: (
+					padding-left,
+					padding-right,
+				),
+			),
+			pt: (
+				vrules: (
+					padding-top,
+				),
+			),
+			pb: (
+				vrules: (
+					padding-bottom,
+				),
+			),
+			pl: (
+				vrules: (
+					padding-left,
+				),
+			),
+			pr: (
+				vrules: (
+					padding-right,
+				),
+			),
+			ma: (
+				vrules: (
+					margin-top,
+					margin-bottom,
+					margin-left,
+					margin-right,
+				),
+			),
+			mv: (
+				vrules: (
+					margin-top,
+					margin-bottom,
+				),
+			),
+			mh: (
+				vrules: (
+					margin-left,
+					margin-right,
+				),
+			),
+			mt: (
+				vrules: (
+					margin-top,
+				),
+			),
+			mb: (
+				vrules: (
+					margin-bottom,
+				),
+			),
+			ml: (
+				vrules: (
+					margin-left,
+				),
+			),
+			mr: (
+				vrules: (
+					margin-right,
+				),
+			),
+		)
+	),
+	(
+		// negative:
+		values: cfg(negative_margins, $sassy),
+		rules: (
+			nv: (
+				vrules: (
+					margin-top,
+					margin-bottom,
+				),
+			),
+			nh: (
+				vrules: (
+					margin-left,
+					margin-right,
+				),
+			),
+			nt: (
+				vrules: (
+					margin-top,
+				),
+			),
+			nb: (
+				vrules: (
+					margin-bottom,
+				),
+			),
+			nl: (
+				vrules: (
+					margin-left,
+				),
+			),
+			nr: (
+				vrules: (
+					margin-right,
+				),
+			),
+		)
+	)
+);

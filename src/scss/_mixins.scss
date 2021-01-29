@@ -1,0 +1,26 @@
+// Requires $sassy to be defined
+@function cfg($key, $map: $cfg) {
+	@return map-get($map, $key);
+}
+@function c($col) {
+	@return cfg($col, cfg(colours, $sassy));
+}
+@function mq($mq) {
+	@return cfg($mq, cfg(queries, $sassy));
+}
+@mixin build($cfg: $cfg) {
+	@each $tach in $cfg {
+		@each $classname, $rules in cfg(rules, $tach) {
+			@each $suffix, $val in cfg(values, $tach) {
+				.#{$classname}#{$suffix} {
+					@each $rule in cfg(vrules, $rules) {
+						#{$rule}: #{$val};
+					}
+					@each $x, $y in cfg(srules, $rules) {
+						#{$x}: #{$y};
+					}
+				}
+			}
+		}
+	}
+}

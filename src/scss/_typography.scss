@@ -1,0 +1,108 @@
+$cfg: (
+	(
+		// colors:
+		values:  cfg(colours, $sassy),
+		rules: (
+			"": (
+				vrules: (
+					color,
+				),
+			),
+		)
+	),
+	(
+		// fonts:
+		values: cfg(fonts, $sassy),
+		rules: (
+			"": (
+				vrules: (
+					font-family,
+				),
+			),
+		)
+	),
+	(
+		// sizes:
+		values: cfg(font_sizes, $sassy),
+		rules: (
+			f: (
+				vrules: (
+					font-size,
+				),
+			),
+		)
+	),
+	(
+		// weights:
+		values: cfg(font_weights, $sassy),
+		rules: (
+			fw: (
+				vrules: (
+					font-weight,
+				),
+			),
+		)
+	),
+	(
+		// leading:
+		values:
+			(
+				copy: 1.4,
+				headline: 1.1,
+				solid: 1,
+			),
+		rules: (
+			lh-: (
+				vrules: (
+					line-height,
+				),
+			),
+		)
+	),
+	(
+		// align:
+		values:
+			(
+				c: center,
+				r: right,
+				l: left,
+			),
+		rules: (
+			"t": (
+				vrules: (
+					text-align,
+				),
+			),
+		)
+	),
+	(
+		// tracking:
+		values:
+			(
+				tight: -0.05em,
+				loose: 1.5em,
+			),
+		rules: (
+			tracked-: (
+				vrules: (
+					letter-spacing,
+				),
+			),
+		)
+	),
+	(
+		// font_style:
+		values:
+			(
+				i: italic,
+				fs-normal: normal,
+			),
+		rules: (
+			"": (
+				vrules: (
+					font-style,
+				),
+			),
+		)
+	)
+);

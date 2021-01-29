@@ -1,0 +1,43 @@
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+.cl#{$sfx} {
+	clear: left;
+}
+
+.cr#{$sfx} {
+	clear: right;
+}
+
+.cb#{$sfx} {
+	clear: both;
+}
+
+.cn#{$sfx} {
+	clear: none;
+}
+
+.fl#{$sfx} {
+	float: left;
+	_display: inline;
+}
+
+.fr#{$sfx} {
+	float: right;
+	_display: inline;
+}
+
+.fn#{$sfx} {
+	float: none;
+}

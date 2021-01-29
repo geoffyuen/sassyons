@@ -1,0 +1,111 @@
+.bt0#{$sfx} {
+	border-top-width: 0;
+}
+
+.br0#{$sfx} {
+	border-right-width: 0;
+}
+
+.bb0#{$sfx} {
+	border-bottom-width: 0;
+}
+
+.bl0#{$sfx} {
+	border-left-width: 0;
+}
+.br--bottom#{$sfx} {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.br--top#{$sfx} {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.br--right#{$sfx} {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.br--left#{$sfx} {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+$cfg: (
+	// border-width:
+	(
+			values: cfg(border_widths, $sassy),
+			rules: (
+				bw: (
+					vrules: (
+						border-width,
+					),
+					static: (
+						"border-style": "solid",
+					),
+				),
+			),
+		),
+	// border_color:
+	(
+			values: cfg(colours, $sassy),
+			rules: (
+				b--: (
+					vrules: (
+						border-color,
+					),
+				),
+			),
+		),
+	// border-radius:
+	(
+			values: (
+				100: 100%,
+				pill: 9999px,
+			),
+			rules: (
+				br-: (
+					vrules: (
+						border-style,
+					),
+				),
+			),
+		),
+	// radius_corner:
+	(
+			values: (
+				0: 0,
+				100: 100%,
+				1: 2px,
+				2: 3px,
+				3: 4px,
+				4: 8px,
+				pill: 9999px,
+			),
+			rules: (
+				br-: (
+					vrules: (
+						border-radius,
+					),
+				),
+			),
+		),
+	// border-style:
+	(
+			values: (
+				dotted: dotted,
+				dashed: dashed,
+				solid: solid,
+				none: none,
+			),
+			rules: (
+				b--: (
+					vrules: (
+						border-style,
+					),
+				),
+			),
+		)
+);

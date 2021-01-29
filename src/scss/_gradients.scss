@@ -1,0 +1,12 @@
+$cfg: (
+	(
+		values: cfg(gradients, $sassy),
+		rules: (
+			gradient: (
+				vrules: (
+					background-image,
+				),
+			),
+		)
+	),
+);
