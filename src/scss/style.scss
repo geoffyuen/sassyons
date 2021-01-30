@@ -187,6 +187,11 @@ $sassy: (
 		rotate-270: rotate(270deg),
 		rotate-315: rotate(315deg),
 	),
+	// table stripe
+	table_stripe: (
+		light: #aaa,
+		dark: #333
+	),
 );
 @import "mixins";
 @import "normalize";
@@ -223,6 +228,8 @@ $sfx: "";
 @include build();
 @import "transform";
 @include build();
+@import "table";
+@include build_nth();
 @import "scroll";
 @import "svg";
 @include build();

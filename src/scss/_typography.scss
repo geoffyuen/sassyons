@@ -66,11 +66,45 @@ $cfg: (
 				c: center,
 				r: right,
 				l: left,
+				j: justify,
 			),
 		rules: (
 			"t": (
 				vrules: (
 					text-align,
+				),
+			),
+		)
+	),
+	(
+		// style:
+		values:
+			(
+				strike: line-through,
+				underline: underline,
+				no-underline: none,
+			),
+		rules: (
+			"": (
+				vrules: (
+					text-style,
+				),
+			),
+		)
+	),
+	(
+		// case:
+		values:
+			(
+				ttc: capitalize,
+				ttl: lowercase,
+				ttu: uppercase,
+				ttn: none,
+			),
+		rules: (
+			"": (
+				vrules: (
+					text-transform,
 				),
 			),
 		)

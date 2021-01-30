@@ -1,0 +1,16 @@
+$cfg: (
+	(
+		values: cfg(table_stripe),
+		rules: (
+			striped-: (
+				vrules: (
+					background-color,
+				),
+			),
+		),
+	),
+);
+.collapse {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
