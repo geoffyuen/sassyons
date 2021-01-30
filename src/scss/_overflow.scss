@@ -1,0 +1,27 @@
+$cfg: (
+	(
+		values: (
+			visible: visible,
+			hidden: hidden,
+			scroll: scroll,
+			auto: auto,
+		),
+		rules: (
+			overflow-: (
+				vrules: (
+					overflow,
+				),
+			),
+			overflow-x-: (
+				vrules: (
+					overflow-x,
+				),
+			),
+			overflow-y-: (
+				vrules: (
+					overflow-y,
+				),
+			),
+		),
+	),
+);

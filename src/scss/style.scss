@@ -160,6 +160,11 @@ $sassy: (
 		25:.25,
 		0:0,
 	),
+	outline: (
+		"": 1px solid,
+		-transparent: 1px solid transparent,
+		"-0": 0,
+	),
 );
 @import "mixins";
 @import "normalize";
@@ -185,6 +190,11 @@ $sfx: "";
 @import "link";
 @import "list";
 @import "opacity";
+@include build();
+@import "outline";
+@include build();
+@import "overflow";
+@include build();
 @import "position";
 @include build();
 @import "svg";
