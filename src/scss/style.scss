@@ -165,6 +165,18 @@ $sassy: (
 		-transparent: 1px solid transparent,
 		"-0": 0,
 	),
+	// top-*, left-*, right-*, bottom-*
+	position: (
+		0:0,
+		1:1px,
+		2:2px,
+		3:1rem,
+		4:2rem,
+		"-1":-1px,
+		"-2":-2px,
+		"-3":-1rem,
+		"-4":-2rem,
+	),
 );
 @import "mixins";
 @import "normalize";
