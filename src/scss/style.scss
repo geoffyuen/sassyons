@@ -177,6 +177,16 @@ $sassy: (
 		"-3":-1rem,
 		"-4":-2rem,
 	),
+	// transforms
+	transform: (
+		rotate-45: rotate(45deg),
+		rotate-90: rotate(90deg),
+		rotate-135: rotate(135deg),
+		rotate-180: rotate(180deg),
+		rotate-225: rotate(225deg),
+		rotate-270: rotate(270deg),
+		rotate-315: rotate(315deg),
+	),
 );
 @import "mixins";
 @import "normalize";
@@ -208,6 +218,8 @@ $sfx: "";
 @import "overflow";
 @include build();
 @import "position";
+@include build();
+@import "transform";
 @include build();
 @import "svg";
 @include build();
