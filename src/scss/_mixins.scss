@@ -24,3 +24,19 @@
 		}
 	}
 }
+@mixin build_hover($cfg: $cfg) {
+	@each $tach in $cfg {
+		@each $classname, $rules in cfg(rules, $tach) {
+			@each $suffix, $val in cfg(values, $tach) {
+				.#{$classname}#{$suffix}:hover {
+					@each $rule in cfg(vrules, $rules) {
+						#{$rule}: #{$val};
+					}
+					@each $x, $y in cfg(srules, $rules) {
+						#{$x}: #{$y};
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+$cfg: (
+	(
+		// background_color
+		values: cfg(colours),
+		rules: (
+			hover-bg-: (
+				vrules: (
+					background-color,
+				),
+			),
+		)
+	),
+);
