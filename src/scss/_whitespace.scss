@@ -1,7 +1,7 @@
 $cfg: (
 	(
 		// whitespace:
-		values: cfg(whitespace, $sassy),
+		values: cfg(whitespace),
 		rules: (
 			pa: (
 				vrules: (
@@ -87,7 +87,7 @@ $cfg: (
 	),
 	(
 		// negative:
-		values: cfg(negative_margins, $sassy),
+		values: cfg(negative_margins),
 		rules: (
 			nv: (
 				vrules: (

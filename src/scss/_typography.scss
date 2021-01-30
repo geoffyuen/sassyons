@@ -1,7 +1,7 @@
 $cfg: (
 	(
 		// colors:
-		values:  cfg(colours, $sassy),
+		values:  cfg(colours),
 		rules: (
 			"": (
 				vrules: (
@@ -12,7 +12,7 @@ $cfg: (
 	),
 	(
 		// fonts:
-		values: cfg(fonts, $sassy),
+		values: cfg(fonts),
 		rules: (
 			"": (
 				vrules: (
@@ -23,7 +23,7 @@ $cfg: (
 	),
 	(
 		// sizes:
-		values: cfg(font_sizes, $sassy),
+		values: cfg(font_sizes),
 		rules: (
 			f: (
 				vrules: (
@@ -34,7 +34,7 @@ $cfg: (
 	),
 	(
 		// weights:
-		values: cfg(font_weights, $sassy),
+		values: cfg(font_weights),
 		rules: (
 			fw: (
 				vrules: (

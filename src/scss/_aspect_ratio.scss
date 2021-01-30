@@ -14,7 +14,7 @@
 }
 $cfg: (
 	(
-		values: cfg(aspect_ratios, $sassy),
+		values: cfg(aspect_ratios),
 		rules: (
 			aspect-ratio--: (
 				vrules: (

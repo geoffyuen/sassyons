@@ -1,4 +1,3 @@
-// @import "colours";
 $sassy: (
 	colours: (
 		red: #f00,
@@ -9,6 +8,7 @@ $sassy: (
 		black: #000,
 		transparent: transparent,
 	),
+	// f*
 	font_sizes: (
 		1: 48px,
 		2: 32px,
@@ -22,6 +22,7 @@ $sassy: (
 		serif: 'georgia, "New Times Roman", times, serif',
 		code: "monospace",
 	),
+	// fw*00
 	font_weights: (
 		100: 100,
 		200: 200,
@@ -33,6 +34,7 @@ $sassy: (
 		800: 800,
 		900: 900,
 	),
+	// p*, m*
 	whitespace: (
 		0: 0,
 		1: 1px,
@@ -43,6 +45,7 @@ $sassy: (
 		6: 32px,
 		7: 64px,
 	),
+	// n*
 	negative_margins: (
 		0: 0,
 		1: 1px,
@@ -53,6 +56,7 @@ $sassy: (
 		6: 32px,
 		7: 64px,
 	),
+	// w-*
 	widths: (
 		10: 10%,
 		20: 20%,
@@ -69,13 +73,46 @@ $sassy: (
 		90: 90%,
 		100: 100%,
 	),
+	// mw*
 	max_widths: (
-		0: 0,
 		1: 320px,
 		2: 480px,
 		3: 768px,
 		4: 960px,
 		5: 1200px,
+		-none: none,
+	),
+	// h*
+	heights:(
+		1:1rem,
+		2:2rem,
+		3:4rem,
+		4:8rem,
+		5:16rem,
+	),
+	// h-*
+	heights_percentage:(
+		25:25%,
+		50:50%,
+		75:75%,
+		100:100%,
+		auto: auto,
+		inherit: inherit,
+	),
+	// min-h-*
+	min_height:(
+		100: 100%,
+	),
+	// vh-*
+	vh_height: (
+		25: 25vh,
+		50: 50vh,
+		75: 75vh,
+		100: 100vh,
+	),
+	// min-vh-*
+	min_vh_height: (
+		100: 100vh,
 	),
 	queries: (
 		s: 480px,
@@ -83,6 +120,7 @@ $sassy: (
 		l: 960px,
 		xl: 1200px,
 	),
+	// bw*
 	border_widths: (
 		0: 0,
 		1: 1px,
@@ -90,6 +128,7 @@ $sassy: (
 		3: 4px,
 		4: 8px,
 	),
+	// shadow-*
 	box_shadows: (
 		1: 0 0 10px black,
 		2: 1px 1px 0 black,
@@ -114,36 +153,50 @@ $sassy: (
 		light-blue: "linear-gradient(#76D3FE, #008AE0)",
 		light-blue-reversed: "linear-gradient(#008AE0, #76D3FE)",
 	),
-
+	opacity: (
+		100:1,
+		75:.75,
+		50:.5,
+		25:.25,
+		0:0,
+	),
 );
 @import "mixins";
+@import "normalize";
+@import "custom";
 
 $sfx: "";
 @import "aspect_ratio";
-@include build($cfg);
+@include build();
 @import "background";
-@include build($cfg);
+@include build();
 @import "border";
-@include build($cfg);
+@include build();
 @import "box_shadow";
-@include build($cfg);
+@include build();
 @import "display";
-@include build($cfg);
+@include build();
 @import "flex_static";
 @import "float";
 @import "forms";
+@import "height";
+@include build();
+@import "img";
+@import "link";
+@import "list";
+@import "opacity";
 @import "position";
-@include build($cfg);
+@include build();
 @import "svg";
-@include build($cfg);
+@include build();
 @import "typography";
-@include build($cfg);
+@include build();
 @import "whitespace";
-@include build($cfg);
+@include build();
 @import "widths";
-@include build($cfg);
+@include build();
 
-@each $mq_label, $mq_val in cfg(queries, $sassy) {
+@each $mq_label, $mq_val in cfg(queries) {
 	$sfx: "-" + $mq_label;
 	@media screen and (min-width: #{$mq_val}) {
 	}

@@ -1,12 +1,12 @@
 // Requires $sassy to be defined
-@function cfg($key, $map: $cfg) {
+@function cfg($key, $map: $sassy) {
 	@return map-get($map, $key);
 }
 @function c($col) {
-	@return cfg($col, cfg(colours, $sassy));
+	@return cfg($col, cfg(colours));
 }
 @function mq($mq) {
-	@return cfg($mq, cfg(queries, $sassy));
+	@return cfg($mq, cfg(queries));
 }
 @mixin build($cfg: $cfg) {
 	@each $tach in $cfg {

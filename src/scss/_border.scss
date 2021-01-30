@@ -36,7 +36,7 @@
 $cfg: (
 	// border-width:
 	(
-			values: cfg(border_widths, $sassy),
+			values: cfg(border_widths),
 			rules: (
 				bw: (
 					vrules: (
@@ -50,7 +50,7 @@ $cfg: (
 		),
 	// border_color:
 	(
-			values: cfg(colours, $sassy),
+			values: cfg(colours),
 			rules: (
 				b--: (
 					vrules: (

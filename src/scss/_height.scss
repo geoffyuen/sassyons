@@ -1,0 +1,52 @@
+$cfg: (
+	(
+		values: cfg(heights),
+		rules: (
+			h: (
+				vrules: (
+					height,
+				),
+			),
+		),
+	),
+	(
+		values: cfg(heights_percentage),
+		rules: (
+			h-: (
+				vrules: (
+					height,
+				),
+			),
+		),
+	),
+	(
+		values: cfg(min_height),
+		rules: (
+			min-h-: (
+				vrules: (
+					min-height,
+				),
+			),
+		),
+	),
+	(
+		values: cfg(vh_height),
+		rules: (
+			vh-: (
+				vrules: (
+					height,
+				),
+			),
+		),
+	),
+	(
+		values: cfg(min_vh_height),
+		rules: (
+			min-vh-: (
+				vrules: (
+					min-height,
+				),
+			),
+		),
+	),
+);

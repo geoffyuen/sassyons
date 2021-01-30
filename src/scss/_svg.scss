@@ -1,7 +1,7 @@
 $cfg: (
 	(
 		// colors
-		values: cfg(colours, $sassy),
+		values: cfg(colours),
 		rules: (
 			fill-: (
 				vrules: (
@@ -17,7 +17,7 @@ $cfg: (
 	),
 	(
 		// stroke_width
-		values: cfg(svg_stroke_widths, $sassy),
+		values: cfg(svg_stroke_widths),
 		rules: (
 			stroke-: (
 				vrules: (
