@@ -1,6 +1,7 @@
 $cfg: (
 	(
 		// colors
+		responsive: false, 
 		values: cfg(colours),
 		rules: (
 			fill-: (
@@ -17,6 +18,7 @@ $cfg: (
 	),
 	(
 		// stroke_width
+		responsive: false, 
 		values: cfg(svg_stroke_widths),
 		rules: (
 			stroke-: (
@@ -27,3 +29,4 @@ $cfg: (
 		)
 	)
 );
+@include build();

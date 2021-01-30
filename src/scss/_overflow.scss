@@ -1,5 +1,6 @@
 $cfg: (
 	(
+		responsive: true, 
 		values: (
 			visible: visible,
 			hidden: hidden,
@@ -25,3 +26,4 @@ $cfg: (
 		),
 	),
 );
+@include build();

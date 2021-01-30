@@ -1,6 +1,8 @@
-.scroll-touch {
-    -webkit-overflow-scrolling: touch;
-}
-.scroll-smooth {
-    scroll-behavior: smooth;
+@include no_mq {
+	.scroll-touch {
+		-webkit-overflow-scrolling: touch;
+	}
+	.scroll-smooth {
+		scroll-behavior: smooth;
+	}
 }

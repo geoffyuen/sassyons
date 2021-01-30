@@ -1,5 +1,6 @@
 $cfg: (
 	(
+		responsive: false, 
 		values: cfg(outline),
 		rules: (
 			outline: (
@@ -10,3 +11,4 @@ $cfg: (
 		),
 	),
 );
+@include build();

@@ -28,6 +28,7 @@
 
 $cfg: (
 	(
+		responsive: true, 
 		values: cfg(position),
 		rules: (
 			top-: (
@@ -53,3 +54,4 @@ $cfg: (
 		),
 	),
 );
+@include build();

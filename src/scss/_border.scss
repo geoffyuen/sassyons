@@ -1,3 +1,71 @@
+$cfg: (
+	// border-width:
+	(
+			responsive: true,
+			values: cfg(border_widths),
+			rules: (
+				bw: (
+					vrules: (
+						border-width,
+					),
+					static: (
+						"border-style": "solid",
+					),
+				),
+			),
+		),
+	// border_color:
+	(
+			responsive: false,
+			values: cfg(colours),
+			rules: (
+				b--: (
+					vrules: (
+						border-color,
+					),
+				),
+			),
+		),
+	// border-radius
+	(
+			responsive: true,
+			values: (
+				0: 0,
+				100: 100%,
+				1: 2px,
+				2: 3px,
+				3: 4px,
+				4: 8px,
+				pill: 9999px,
+			),
+			rules: (
+				br-: (
+					vrules: (
+						border-radius,
+					),
+				),
+			),
+		),
+	// border-style:
+	(
+			responsive: false,
+			values: (
+				dotted: dotted,
+				dashed: dashed,
+				solid: solid,
+				none: none,
+			),
+			rules: (
+				b--: (
+					vrules: (
+						border-style,
+					),
+				),
+			),
+		)
+);
+@include build();
+
 .bt0#{$sfx} {
 	border-top-width: 0;
 }
@@ -33,79 +101,27 @@
 	border-bottom-right-radius: 0;
 }
 
-$cfg: (
-	// border-width:
-	(
-			values: cfg(border_widths),
-			rules: (
-				bw: (
-					vrules: (
-						border-width,
-					),
-					static: (
-						"border-style": "solid",
-					),
-				),
-			),
-		),
-	// border_color:
-	(
-			values: cfg(colours),
-			rules: (
-				b--: (
-					vrules: (
-						border-color,
-					),
-				),
-			),
-		),
-	// border-radius:
-	(
-			values: (
-				100: 100%,
-				pill: 9999px,
-			),
-			rules: (
-				br-: (
-					vrules: (
-						border-style,
-					),
-				),
-			),
-		),
-	// radius_corner:
-	(
-			values: (
-				0: 0,
-				100: 100%,
-				1: 2px,
-				2: 3px,
-				3: 4px,
-				4: 8px,
-				pill: 9999px,
-			),
-			rules: (
-				br-: (
-					vrules: (
-						border-radius,
-					),
-				),
-			),
-		),
-	// border-style:
-	(
-			values: (
-				dotted: dotted,
-				dashed: dashed,
-				solid: solid,
-				none: none,
-			),
-			rules: (
-				b--: (
-					vrules: (
-						border-style,
-					),
-				),
-			),
-		)
-);
+.ba#{$sfx} {
+	border-style: solid;
+	border-width: 1px;
+}
+.bt#{$sfx} {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+.br#{$sfx} {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.bb#{$sfx} {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+.bl#{$sfx} {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.bn#{$sfx} {
+	border-style: none;
+	border-width: 0;
+}

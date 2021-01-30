@@ -1,5 +1,6 @@
 $cfg: (
 	(
+		responsive: false, 
 		values: cfg(opacity),
 		rules: (
 			o-: (
@@ -10,3 +11,4 @@ $cfg: (
 		),
 	),
 );
+@include build();

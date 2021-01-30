@@ -34,6 +34,7 @@ $sassy: (
 		800: 800,
 		900: 900,
 	),
+	indent: 1em,
 	// p*, m*
 	whitespace: (
 		0: 0,
@@ -115,10 +116,9 @@ $sassy: (
 		100: 100vh,
 	),
 	queries: (
-		s: 480px,
-		m: 768px,
-		l: 960px,
-		xl: 1200px,
+		s: 768px,
+		m: 960px,
+		l: 1200px,
 	),
 	// bw*
 	border_widths: (
@@ -195,55 +195,13 @@ $sassy: (
 );
 @import "mixins";
 @import "normalize";
-@import "custom";
 
 $sfx: "";
-@import "aspect_ratio";
-@include build();
-@import "background";
-@include build();
-@import "background_hover";
-@include build_hover();
-@import "border";
-@include build();
-@import "box_shadow";
-@include build();
-@import "display";
-@include build();
-@import "flex_static";
-@import "float";
-@import "forms";
-@import "height";
-@include build();
-@import "img";
-@import "link";
-@import "list";
-@import "opacity";
-@include build();
-@import "outline";
-@include build();
-@import "overflow";
-@include build();
-@import "position";
-@include build();
-@import "transform";
-@include build();
-@import "table";
-@include build_nth();
-@import "scroll";
-@import "svg";
-@include build();
-@import "typography";
-@include build();
-@import "typography_hover";
-@include build_hover();
-@import "whitespace";
-@include build();
-@import "widths";
-@include build();
+@import "import";
 
 @each $mq_label, $mq_val in cfg(queries) {
 	$sfx: "-" + $mq_label;
 	@media screen and (min-width: #{$mq_val}) {
+		@import "import";
 	}
 }

@@ -1,46 +1,29 @@
-.dn#{$sfx} {
-	display: none;
-}
-
-.di#{$sfx} {
-	display: inline;
-}
-
-.db#{$sfx} {
-	display: block;
-}
-
-.dib#{$sfx} {
-	display: inline-block;
-}
-
-.dit#{$sfx} {
-	display: inline-table;
-}
-
-.dt#{$sfx} {
-	display: table;
-}
-
-.dtc#{$sfx} {
-	display: table-cell;
-}
-
-.dt-row#{$sfx} {
-	display: table-row;
-}
-
-.dt-row-group#{$sfx} {
-	display: table-row-group;
-}
-
-.dt-column#{$sfx} {
-	display: table-column;
-}
-
-.dt-column-group#{$sfx} {
-	display: table-column-group;
-}
+$cfg: (
+	(
+		responsive: true, 
+		values: (
+			dn: none,
+			di: inline,
+			db: block,
+			dib: inline-block,
+			dit: inline-table,
+			dt: table,
+			dtc: table-cell,
+			dt-row: table-row,
+			dt-row-group: table-row-group,
+			dt-column: table-column,
+			dt-column-group: table-column-group,
+		),
+		rules: (
+			"": (
+				vrules: (
+					display,
+				),
+			),
+		),
+	),
+);
+@include build();
 
 /*
     This will set table to full width and then

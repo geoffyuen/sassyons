@@ -1,7 +1,8 @@
 $cfg: (
 	(
 		// colors:
-		values:  cfg(colours),
+		responsive: false,
+		values: cfg(colours),
 		rules: (
 			"": (
 				vrules: (
@@ -12,6 +13,7 @@ $cfg: (
 	),
 	(
 		// fonts:
+		responsive: false,
 		values: cfg(fonts),
 		rules: (
 			"": (
@@ -23,6 +25,7 @@ $cfg: (
 	),
 	(
 		// sizes:
+		responsive: true,
 		values: cfg(font_sizes),
 		rules: (
 			f: (
@@ -34,6 +37,7 @@ $cfg: (
 	),
 	(
 		// weights:
+		responsive: false,
 		values: cfg(font_weights),
 		rules: (
 			fw: (
@@ -45,12 +49,12 @@ $cfg: (
 	),
 	(
 		// leading:
-		values:
-			(
-				copy: 1.4,
-				headline: 1.1,
-				solid: 1,
-			),
+		responsive: false,
+		values: (
+			copy: 1.4,
+			headline: 1.1,
+			solid: 1,
+		),
 		rules: (
 			lh-: (
 				vrules: (
@@ -61,13 +65,13 @@ $cfg: (
 	),
 	(
 		// align:
-		values:
-			(
-				c: center,
-				r: right,
-				l: left,
-				j: justify,
-			),
+		responsive: true,
+		values: (
+			c: center,
+			r: right,
+			l: left,
+			j: justify,
+		),
 		rules: (
 			"t": (
 				vrules: (
@@ -78,29 +82,29 @@ $cfg: (
 	),
 	(
 		// style:
-		values:
-			(
-				strike: line-through,
-				underline: underline,
-				no-underline: none,
-			),
+		responsive: false,
+		values: (
+			strike: line-through,
+			underline: underline,
+			no-underline: none,
+		),
 		rules: (
 			"": (
 				vrules: (
-					text-style,
+					text-decoration,
 				),
 			),
 		)
 	),
 	(
 		// case:
-		values:
-			(
-				ttc: capitalize,
-				ttl: lowercase,
-				ttu: uppercase,
-				ttn: none,
-			),
+		responsive: false,
+		values: (
+			ttc: capitalize,
+			ttl: lowercase,
+			ttu: uppercase,
+			ttn: none,
+		),
 		rules: (
 			"": (
 				vrules: (
@@ -111,11 +115,11 @@ $cfg: (
 	),
 	(
 		// tracking:
-		values:
-			(
-				tight: -0.05em,
-				loose: 1.5em,
-			),
+		responsive: false,
+		values: (
+			tight: -0.05em,
+			loose: 1.5em,
+		),
 		rules: (
 			tracked-: (
 				vrules: (
@@ -126,11 +130,11 @@ $cfg: (
 	),
 	(
 		// font_style:
-		values:
-			(
-				i: italic,
-				fs-normal: normal,
-			),
+		responsive: false,
+		values: (
+			i: italic,
+			fs-normal: normal,
+		),
 		rules: (
 			"": (
 				vrules: (
@@ -140,3 +144,24 @@ $cfg: (
 		)
 	)
 );
+@include build();
+@include no_mq {
+	.indent {
+		text-indent: cfg(indent);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.nested-copy-indent p + p {
+		text-indent: cfg(indent);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.small-caps {
+		font-variant: small-caps;
+	}
+	.truncate {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}

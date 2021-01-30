@@ -1,6 +1,7 @@
 $cfg: (
 	(
 		// background_color
+		responsive: false, 
 		values: cfg(colours),
 		rules: (
 			hover-bg-: (
@@ -11,3 +12,4 @@ $cfg: (
 		)
 	),
 );
+@include build_hover();

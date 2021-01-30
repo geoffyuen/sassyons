@@ -1,6 +1,7 @@
 $cfg: (
 	(
 		// whitespace:
+		responsive: true, 
 		values: cfg(whitespace),
 		rules: (
 			pa: (
@@ -87,6 +88,7 @@ $cfg: (
 	),
 	(
 		// negative:
+		responsive: true, 
 		values: cfg(negative_margins),
 		rules: (
 			nv: (
@@ -124,3 +126,4 @@ $cfg: (
 		)
 	)
 );
+@include build();

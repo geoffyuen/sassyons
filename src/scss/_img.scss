@@ -1,1 +1,11 @@
-img { max-width: 100%; }
+@include no_mq {
+	img {
+		max-width: 100%;
+	}
+
+	.nested-img img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+}

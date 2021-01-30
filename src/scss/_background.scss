@@ -1,6 +1,7 @@
 $cfg: (
 	(
 		// background_color
+		responsive: false, 
 		values: cfg(colours),
 		rules: (
 			bg-: (
@@ -12,6 +13,7 @@ $cfg: (
 	),
 	(
 		// position
+		responsive: true, 
 		values:
 			(
 				center: center center,
@@ -29,7 +31,8 @@ $cfg: (
 		)
 	),
 	(
-		//size:
+		//background-size:
+		responsive: true, 
 		values:
 			(
 				cover: "cover !important",
@@ -44,3 +47,4 @@ $cfg: (
 		)
 	)
 );
+@include build();

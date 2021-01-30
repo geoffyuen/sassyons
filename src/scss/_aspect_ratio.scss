@@ -14,6 +14,7 @@
 }
 $cfg: (
 	(
+		responsive: true, 
 		values: cfg(aspect_ratios),
 		rules: (
 			aspect-ratio--: (
@@ -24,3 +25,4 @@ $cfg: (
 		)
 	),
 );
+@include build();

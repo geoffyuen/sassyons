@@ -1,5 +1,6 @@
 $cfg: (
 	(
+		responsive: false,
 		values: cfg(table_stripe),
 		rules: (
 			striped-: (
@@ -10,7 +11,10 @@ $cfg: (
 		),
 	),
 );
-.collapse {
-    border-collapse: collapse;
-    border-spacing: 0;
+@include build_nth();
+@include no_mq {
+	.collapse {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 }
