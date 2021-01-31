@@ -1,7 +1,10 @@
+// All the scss files we want to build classes from
+// If responsive flag is true then the class will be duplicated inside
+// media-queries widths set in $sassy.
 @import "custom";
 @import "aspect_ratio";
-@import "background";
 @import "background_hover";
+@import "background";
 @import "border";
 @import "box_shadow";
 @import "display";
@@ -17,10 +20,11 @@
 @import "overflow";
 @import "position";
 @import "scroll";
+@import "spacing";
 @import "svg";
 @import "table";
 @import "transform";
-@import "typography";
+@import "transition";
 @import "typography_hover";
-@import "spacing";
+@import "typography";
 @import "widths";

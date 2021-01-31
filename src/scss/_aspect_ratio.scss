@@ -1,7 +1,7 @@
-.aspect-ratio#{$sfx} {
+.aspect-ratio#{$mq} {
 	height: 0;
 	position: relative;
-	&--object#{$sfx} {
+	&--object#{$mq} {
 		position: absolute;
 		top: 0;
 		right: 0;

@@ -16,3 +16,11 @@ h5,
 h6 {
 	line-height: cfg(headline, cfg(line_height));
 }
+
+a {
+	color: c(blue);
+}
+
+a:focus {
+	box-shadow: 0 0 3px 3px c(blue);
+}

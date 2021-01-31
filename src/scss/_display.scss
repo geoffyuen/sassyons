@@ -29,7 +29,7 @@ $cfg: (
     This will set table to full width and then
     all cells will be equal width
   */
-.dt--fixed#{$sfx} {
+.dt--fixed#{$mq} {
 	table-layout: fixed;
 	width: 100%;
 }

@@ -1,15 +1,15 @@
-.flex#{$sfx} {
+.flex#{$mq} {
 	display: flex;
 }
 
-.inline-flex#{$sfx} {
+.inline-flex#{$mq} {
 	display: inline-flex;
 }
 
 /* 1. Fix for Chrome 44 bug.
    * https://code.google.com/p/chromium/issues/detail?id=506893 */
 
-.flex-auto#{$sfx} {
+.flex-auto#{$mq} {
 	flex: 1 1 auto;
 	min-width: 0;
 	/* 1 */
@@ -17,174 +17,174 @@
 	/* 1 */
 }
 
-.flex-none#{$sfx} {
+.flex-none#{$mq} {
 	flex: none;
 }
 
-.flex-column#{$sfx} {
+.flex-column#{$mq} {
 	flex-direction: column;
 }
 
-.flex-row#{$sfx} {
+.flex-row#{$mq} {
 	flex-direction: row;
 }
 
-.flex-wrap#{$sfx} {
+.flex-wrap#{$mq} {
 	flex-wrap: wrap;
 }
 
-.flex-nowrap#{$sfx} {
+.flex-nowrap#{$mq} {
 	flex-wrap: nowrap;
 }
 
-.flex-wrap-reverse#{$sfx} {
+.flex-wrap-reverse#{$mq} {
 	flex-wrap: wrap-reverse;
 }
 
-.flex-column-reverse#{$sfx} {
+.flex-column-reverse#{$mq} {
 	flex-direction: column-reverse;
 }
 
-.flex-row-reverse#{$sfx} {
+.flex-row-reverse#{$mq} {
 	flex-direction: row-reverse;
 }
 
-.items-start#{$sfx} {
+.items-start#{$mq} {
 	align-items: flex-start;
 }
 
-.items-end#{$sfx} {
+.items-end#{$mq} {
 	align-items: flex-end;
 }
 
-.items-center#{$sfx} {
+.items-center#{$mq} {
 	align-items: center;
 }
 
-.items-baseline#{$sfx} {
+.items-baseline#{$mq} {
 	align-items: baseline;
 }
 
-.items-stretch#{$sfx} {
+.items-stretch#{$mq} {
 	align-items: stretch;
 }
 
-.self-start#{$sfx} {
+.self-start#{$mq} {
 	align-self: flex-start;
 }
 
-.self-end#{$sfx} {
+.self-end#{$mq} {
 	align-self: flex-end;
 }
 
-.self-center#{$sfx} {
+.self-center#{$mq} {
 	align-self: center;
 }
 
-.self-baseline#{$sfx} {
+.self-baseline#{$mq} {
 	align-self: baseline;
 }
 
-.self-stretch#{$sfx} {
+.self-stretch#{$mq} {
 	align-self: stretch;
 }
 
-.justify-start#{$sfx} {
+.justify-start#{$mq} {
 	justify-content: flex-start;
 }
 
-.justify-end#{$sfx} {
+.justify-end#{$mq} {
 	justify-content: flex-end;
 }
 
-.justify-center#{$sfx} {
+.justify-center#{$mq} {
 	justify-content: center;
 }
 
-.justify-between#{$sfx} {
+.justify-between#{$mq} {
 	justify-content: space-between;
 }
 
-.justify-around#{$sfx} {
+.justify-around#{$mq} {
 	justify-content: space-around;
 }
 
-.content-start#{$sfx} {
+.content-start#{$mq} {
 	align-content: flex-start;
 }
 
-.content-end#{$sfx} {
+.content-end#{$mq} {
 	align-content: flex-end;
 }
 
-.content-center#{$sfx} {
+.content-center#{$mq} {
 	align-content: center;
 }
 
-.content-between#{$sfx} {
+.content-between#{$mq} {
 	align-content: space-between;
 }
 
-.content-around#{$sfx} {
+.content-around#{$mq} {
 	align-content: space-around;
 }
 
-.content-stretch#{$sfx} {
+.content-stretch#{$mq} {
 	align-content: stretch;
 }
 
-.order-0#{$sfx} {
+.order-0#{$mq} {
 	order: 0;
 }
 
-.order-1#{$sfx} {
+.order-1#{$mq} {
 	order: 1;
 }
 
-.order-2#{$sfx} {
+.order-2#{$mq} {
 	order: 2;
 }
 
-.order-3#{$sfx} {
+.order-3#{$mq} {
 	order: 3;
 }
 
-.order-4#{$sfx} {
+.order-4#{$mq} {
 	order: 4;
 }
 
-.order-5#{$sfx} {
+.order-5#{$mq} {
 	order: 5;
 }
 
-.order-6#{$sfx} {
+.order-6#{$mq} {
 	order: 6;
 }
 
-.order-7#{$sfx} {
+.order-7#{$mq} {
 	order: 7;
 }
 
-.order-8#{$sfx} {
+.order-8#{$mq} {
 	order: 8;
 }
 
-.order-last#{$sfx} {
+.order-last#{$mq} {
 	order: 99999;
 }
 
-.flex-grow-0#{$sfx} {
+.flex-grow-0#{$mq} {
 	flex-grow: 0;
 }
 
-.flex-grow-1#{$sfx} {
+.flex-grow-1#{$mq} {
 	flex-grow: 1;
 }
 
-.flex-shrink-0#{$sfx} {
+.flex-shrink-0#{$mq} {
 	flex-shrink: 0;
 }
 
-.flex-shrink-1#{$sfx} {
+.flex-shrink-1#{$mq} {
 	flex-shrink: 1;
 }

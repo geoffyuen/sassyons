@@ -1,0 +1,14 @@
+$cfg: (
+	(
+		responsive: false, 
+		values: cfg(transition),
+		rules: (
+			trans-: (
+				vrules: (
+					transition,
+				),
+			),
+		),
+	),
+);
+@include build();

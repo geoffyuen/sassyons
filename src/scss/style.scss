@@ -4,12 +4,12 @@
 @import "_html";
 
 // Build classes without media queries
-$sfx: "";
+$mq: "";
 @import "_import";
 
-// Build classes with media queries
-@each $mq_label, $mq_val in cfg(queries) {
-	$sfx: "-" + $mq_label;
+// Build classes with media queries and append $mq as our media-query class modifier
+@each $mq_label, $mq_val in cfg(media_queries) {
+	$mq: "-" + $mq_label;
 	@media screen and (min-width: #{$mq_val}) {
 		@import "_import";
 	}

@@ -13,12 +13,12 @@ $sassy: (
 	),
 	// f*
 	font_sizes: (
-		1: 48px,
-		2: 32px,
-		3: 28px,
-		4: 24px,
-		5: 18px,
-		6: 14px,
+		1: 4em,
+		2: 3em,
+		3: 2em,
+		4: 1.5em,
+		5: 1.125em,
+		6: .8em,
 	),
 	fonts: (
 		sans: "helvetica, arial, sans-serif",
@@ -29,7 +29,7 @@ $sassy: (
 	line_height: (
 		solid: 1,
 		headline: 1.1,
-		copy: 1.4,
+		copy: 1.6,
 	),
 	// fw*00
 	font_weights: (
@@ -130,11 +130,17 @@ $sassy: (
 	min_vh_height: (
 		100: 100vh,
 	),
-	queries: (
+	media_queries: (
 		s: 768px,
 		m: 960px,
 		l: 1200px,
-	),
+    ),
+    // transition
+    transition: (
+        ease-in: .2s ease-in,
+        ease-out: .2s ease-out,
+        ease-in-out: .2s ease-in-out,
+    ),
 	// bw*
 	border_widths: (
 		0: 0,
@@ -142,7 +148,18 @@ $sassy: (
 		2: 2px,
 		3: 4px,
 		4: 8px,
-	),
+    ),
+    // br-*
+    border_radius: (
+        0: 0,
+        100: 100%,
+        pill: 9999px,
+        1: 2px,
+        2: 3px,
+        3: 4px,
+        4: 8px,
+        5: 16px,
+    ),
 	// shadow-*
 	box_shadows: (
 		1: 0 0 10px black,

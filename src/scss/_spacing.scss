@@ -128,13 +128,13 @@ $cfg: (
 );
 @include build();
 
-.ml-auto#{$sfx} {
+.ml-auto#{$mq} {
 	margin-left: auto;
 }
-.mr-auto#{$sfx} {
+.mr-auto#{$mq} {
 	margin-right: auto;
 }
-.center#{$sfx} {
+.center#{$mq} {
 	margin-left: auto;
 	margin-right: auto;
 }

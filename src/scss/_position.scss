@@ -1,25 +1,29 @@
-.static#{$sfx} {
+.static#{$mq} {
 	position: static;
 }
 
-.relative#{$sfx} {
+.relative#{$mq} {
 	position: relative;
 }
 
-.absolute#{$sfx} {
+.absolute#{$mq} {
 	position: absolute;
 }
 
-.fixed#{$sfx} {
+.fixed#{$mq} {
 	position: fixed;
 }
 
-.left-50#{$sfx} {
+.sticky#{$mq} {
+	position: sticky;
+}
+
+.left-50#{$mq} {
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.absolute--fill#{$sfx} {
+.absolute--fill#{$mq} {
 	top: 0;
 	right: 0;
 	bottom: 0;

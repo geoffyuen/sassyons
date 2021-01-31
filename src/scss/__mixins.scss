@@ -11,17 +11,17 @@
 	@return cfg($col, cfg(colours));
 }
 // Get a media-query width
-@function mq($mq) {
-	@return cfg($mq, cfg(queries));
+@function mq($media_query_size_label) {
+	@return cfg($media_query_size_label, cfg(media_queries));
 }
 // Build classes from a cfg
 @mixin build($cfg: $cfg) {
 	@each $tach in $cfg {
-		@if ($sfx == "") or cfg(responsive, $tach) == true {
+		@if ($mq == "") or cfg(responsive, $tach) == true {
 			@each $classname, $rules in cfg(rules, $tach) {
 				$post: cfg(post, $rules);
-				@each $suffix, $val in cfg(values, $tach) {
-					.#{$classname}#{$suffix}#{$sfx}#{$post} {
+				@each $val_label, $val in cfg(values, $tach) {
+					.#{$classname}#{$val_label}#{$mq}#{$post} {
 						@each $rule in cfg(vrules, $rules) {
 							#{$rule}: #{$val};
 						}
@@ -37,7 +37,7 @@
 
 // Place your css inside this mixin to prevent it from being genereted in the media-query loop
 @mixin no_mq {
-	@if $sfx == '' {
+	@if $mq == '' {
 		@content;
 	}
 }

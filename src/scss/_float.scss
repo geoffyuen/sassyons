@@ -12,32 +12,32 @@
 	*zoom: 1;
 }
 
-.cl#{$sfx} {
+.cl#{$mq} {
 	clear: left;
 }
 
-.cr#{$sfx} {
+.cr#{$mq} {
 	clear: right;
 }
 
-.cb#{$sfx} {
+.cb#{$mq} {
 	clear: both;
 }
 
-.cn#{$sfx} {
+.cn#{$mq} {
 	clear: none;
 }
 
-.fl#{$sfx} {
+.fl#{$mq} {
 	float: left;
 	_display: inline;
 }
 
-.fr#{$sfx} {
+.fr#{$mq} {
 	float: right;
 	_display: inline;
 }
 
-.fn#{$sfx} {
+.fn#{$mq} {
 	float: none;
 }
