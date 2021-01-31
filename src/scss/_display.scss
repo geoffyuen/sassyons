@@ -2,7 +2,6 @@ $cfg: (
 	(
 		responsive: true, 
 		values: (
-			dn: none,
 			di: inline,
 			db: block,
 			dib: inline-block,
@@ -13,6 +12,7 @@ $cfg: (
 			dt-row-group: table-row-group,
 			dt-column: table-column,
 			dt-column-group: table-column-group,
+			dn: none,
 		),
 		rules: (
 			"": (
