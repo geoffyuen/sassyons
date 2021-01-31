@@ -1,6 +1,6 @@
 $cfg: (
 	(
-		// background_color
+		// background_color, hover-background_color
 		responsive: false, 
 		values: cfg(colours),
 		rules: (
@@ -8,6 +8,12 @@ $cfg: (
 				vrules: (
 					background-color,
 				),
+			),
+			hover-bg-: (
+				vrules: (
+					background-color,
+				),
+				post: ":hover",
 			),
 		)
 	),

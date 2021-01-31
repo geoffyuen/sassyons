@@ -1,6 +1,7 @@
 // html base styles
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -18,9 +19,16 @@ h6 {
 }
 
 a {
-	color: c(blue);
-}
-
-a:focus {
-	box-shadow: 0 0 3px 3px c(blue);
+	&:link {
+		color: c(blue);
+	}
+	&:visited {
+		color: rgba(c(blue), .5);
+	}
+	&:hover {
+		color: rgba(c(blue), .25);
+	}
+	&:active {
+		color: c(red);
+	}
 }

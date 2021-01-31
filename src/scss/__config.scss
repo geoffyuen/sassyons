@@ -1,4 +1,5 @@
 $sassy: (
+    // *, bg-*, hover-*, hover-bg-*, b--*, fill-*, stroke-*
 	colours: (
 		yellow: #eac435,
 		orange: #fb4d3d,
@@ -19,7 +20,8 @@ $sassy: (
 		4: 1.5em,
 		5: 1.125em,
 		6: .8em,
-	),
+    ),
+    // *
 	fonts: (
 		sans: "helvetica, arial, sans-serif",
 		serif: 'georgia, "New Times Roman", times, serif',
@@ -31,7 +33,7 @@ $sassy: (
 		headline: 1.1,
 		copy: 1.6,
 	),
-	// fw*00
+	// fw*
 	font_weights: (
 		100: 100,
 		200: 200,
@@ -44,7 +46,8 @@ $sassy: (
 		900: 900,
 	),
 	indent: 1em,
-	// p*, m*
+    // p*, pa*, pl*, pr*, etc
+    // m*, ma*, ml*, mr*, etc
 	spacing: (
 		0: 0,
 		1: .25rem,
@@ -55,7 +58,7 @@ $sassy: (
 		6: 8rem,
 		7: 16rem,
 	),
-	// n*
+	// n*, na*, nl*, nr*, etc
 	negative_margins: (
 		1: -.25rem,
 		2: -.5rem,
@@ -68,12 +71,12 @@ $sassy: (
 	// w-*
 	// Use slash to escape colons for classname
 	widths: (
-		1-12: 100%/12,
-		2-12: 100%/6,
-		5-12: 100%*5/12,
-		7-12: 100%*7/12,
-		10-12: 100%*10/12,
-		11-12: 100%*11/12,
+		"1-12": 100%/12,
+		"2-12": 100%/6,
+		"5-12": 100%*5/12,
+		"7-12": 100%*7/12,
+		"10-12": 100%*10/12,
+		"11-12": 100%*11/12,
 		10: 10%,
 		20: 20%,
 		25: 25%,
@@ -129,13 +132,14 @@ $sassy: (
 	// min-vh-*
 	min_vh_height: (
 		100: 100vh,
-	),
+    ),
+    // function: mw(*)
 	media_queries: (
 		s: 768px,
 		m: 960px,
 		l: 1200px,
     ),
-    // transition
+    // trans-*
     transition: (
         ease-in: .2s ease-in,
         ease-out: .2s ease-out,
@@ -165,33 +169,38 @@ $sassy: (
 		1: 0 0 10px black,
 		2: 1px 1px 0 black,
 		3: 2px 2px 3px rgba(black, 0.5),
-	),
+    ),
+    // stroke-*
 	svg_stroke_widths: (
 		0: none,
 		1: 1px,
 		2: 2px,
 		3: 3px,
 		4: 4px,
-	),
+    ),
+    // aspect-ratio aspect-ratio--* > aspect-ratio--object
 	aspect_ratios: (
 		1x1: 100%,
 		2x1: 50%,
 		16x9: 9 / 16 * 100%,
 		4x3: 3 / 4 * 100%,
-	),
+    ),
+    // gradient-*
 	gradients: (
 		blue: "linear-gradient(#4570B0, #0081C2)",
 		blue-reversed: "linear-gradient(#0081C2,#4570B0)",
 		light-blue: "linear-gradient(#76D3FE, #008AE0)",
 		light-blue-reversed: "linear-gradient(#008AE0, #76D3FE)",
-	),
+    ),
+    // o-*
 	opacity: (
 		100:1,
 		75:.75,
 		50:.5,
 		25:.25,
 		0:0,
-	),
+    ),
+    // outline-*
 	outline: (
 		"": 1px solid,
 		-transparent: 1px solid transparent,
@@ -209,7 +218,7 @@ $sassy: (
 		"-3":-1rem,
 		"-4":-2rem,
 	),
-	// transforms
+	// *
 	transform: (
 		rotate-45: rotate(45deg),
 		rotate-90: rotate(90deg),
@@ -219,7 +228,7 @@ $sassy: (
 		rotate-270: rotate(270deg),
 		rotate-315: rotate(315deg),
 	),
-	// table stripe
+	// stripe-*
 	table_stripe: (
 		light: #aaa,
 		dark: #333

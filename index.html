@@ -23,36 +23,36 @@
 	<main id="main" class="flex items-start">
 		<nav id="page-nav" class="mv6 w-20 sticky top-0">
 			<ul class="f6">
-				<li><a href="#">Colours</a></li>
-				<li><a href="#">Typescale</a></li>
-				<li><a href="#">Widths</a></li>
+				<li><a href="#colours">Colours</a></li>
+				<li><a href="#typescale">Typescale</a></li>
+				<li><a href="#widths">Widths</a></li>
 			</ul>
 		</nav>
 		<div class="w-80">
-			<article class="mw4 center mv6">
+			<article id="colours" class="mw4 center mv6">
 				<main>
 					<h1>Colours</h1>
 					<p>Text <code class="dib ph2 bg-ltgray">{{ colourname }}</code>,  background colours <code class="dib ph2 bg-ltgray">bg-{{ colourname }}</code> and hover colours <code class="dib ph2 bg-ltgray">hover-{{ colourname }}</code></p>
 				</main>
 				<ul class="list pa0 flex flex-wrap">
-					<li class="w-third w-25-m w-20-l pa3 bg-yellow white">yellow</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-orange white">orange</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-red white">red</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-green white">green</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-blue white">blue</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-gray white">gray</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-ltgray black">ltgray</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-white black">white</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-black white">black</li>
-					<li class="w-third w-25-m w-20-l pa3 bg-transparent black">transparent</li
+					<li class="outline w-third w-25-m w-20-l pa3 bg-yellow white hover-bg-transparent hover-black trans-ease-in">yellow</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-orange white">orange</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-red white">red</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-green white">green</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-blue white">blue</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-gray white">gray</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-ltgray black">ltgray</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-white black">white</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-black white">black</li>
+					<li class="outline w-third w-25-m w-20-l pa3 bg-transparent black">transparent</li
 				</ul>
 			</article>
-			<article class="mw4 center mv6">
+			<article id="typescale" class="mw4 center mv6">
 				<header>
 					<h1>Type Scale</h1>
 				</header>
 				<ul class="lh-headline">
-					<li class="mv4 f4 f3-s f2-m f1-l">f1 Lorem ipsum dolor      officia quae, explicabo debitis impedit mollitia placeat odio porro consequatur non voluptas.</li>
+					<li class="mv4 f4 f3-s f2-m f1-l">f1 Lorem ipsum dolor</li>
 					<li class="mv4 f2">f2 sit amet consectetur</li>
 					<li class="mv4 f3">f3 adipisicing elit. Voluptatum</li>
 					<li class="mv4 f4">f4 quas expedita at</li>
@@ -60,21 +60,33 @@
 					<li class="mv4 f6">f6 asperiores accusantium, architecto</li>
 				</ul>
 			</article>
-			<article class="pv4 bg-ltgray">
+			<article id="widths" class="pv4 bg-ltgray">
 				<div class="mw4 center mv6 ">
-				<header>
-					<h1>Widths</h1>
-				</header>
-				<div class="w-10 outline bg-white pa1 mv1">w-10</div>
-				<div class="w-20 outline bg-white pa1 mv1">w-20</div>
-				<div class="w-100 outline bg-white pa1 mv1">...w-100</div>
-
-				<div class="w-third outline bg-white pa1 mv1">w-third</div>
-				<div class="w-two-thirds outline bg-white pa1 mv1">w-two-thirds</div>
-
-				<div class="w-1-12 outline bg-white pa1 mv1">w-1-12</div>
-				<div class="w-2-12 outline bg-white pa1 mv1">w-2-12</div>
-				<div class="w-3-12 outline bg-white pa1 mv1">w-3-12</div>
+					<header>
+						<h1>Widths</h1>
+					</header>
+					<section>
+						<h2>Percentage Widths</h2>
+						<div class="w-10 outline bg-white pa1 mv1">w-10</div>
+						<div class="w-20 outline bg-white pa1 mv1">w-20</div>
+						<div class="w-100 outline bg-white pa1 mv1">...w-100</div>
+						
+						<div class="w-third outline bg-white pa1 mv1">w-third</div>
+						<div class="w-two-thirds outline bg-white pa1 mv1">w-two-thirds</div>
+						
+						<h3>Classic 12-column grid</h3>
+						<div class="w-1-12 outline bg-white pa1 mv1">w-1-12</div>
+						<div class="w-2-12 outline bg-white pa1 mv1">w-2-12</div>
+						<div class="w-3-12 outline bg-white pa1 mv1">w-3-12</div>
+					</section>
+					<section>
+						<h2>Max-widths</h2>
+						<div class="mw1 outline bg-white pa1 mv1">mw1</div>
+						<div class="mw2 outline bg-white pa1 mv1">mw2</div>
+						<div class="mw3 outline bg-white pa1 mv1">mw3</div>
+						<div class="mw4 outline bg-white pa1 mv1">mw4</div>
+						<div class="mw5 outline bg-white pa1 mv1">mw5</div>
+					</section>
 				</div>
 			</article>
 			<div class="w-25 bw1 br0 b--black b--solid pa3 tc bg-gray red br-4 mv4">stuff</div>

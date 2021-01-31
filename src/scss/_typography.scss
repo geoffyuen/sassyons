@@ -1,6 +1,6 @@
 $cfg: (
 	(
-		// colors:
+		// colours, hover-colours:
 		responsive: false,
 		values: cfg(colours),
 		rules: (
@@ -9,7 +9,14 @@ $cfg: (
 					color,
 				),
 			),
-		)
+			hover-: (
+				vrules: (
+					color,
+				),
+				post: ":hover",
+			),
+
+		),
 	),
 	(
 		// fonts:

@@ -1,5 +1,8 @@
+// Note: @import will eventually be depreciated. No current alternative in node-sass right now.
+// https://sass-lang.com/documentation/at-rules/import
 @import "_config";
 @import "_mixins";
+// @import "_wordpress_head"; // uncomment if making WordPress theme
 @import "_normalize";
 @import "_html";
 
