@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="sans lh-copy bg-white">
+<html lang="en" class="sans f5 lh-copy bg-white">
 
 <head>
     <meta charset="UTF-8">
@@ -7,22 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sassyons</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>😝</text></svg>">
 </head>
 
 <body>
     <a class="visuallyhidden" href="#main">Skip to Main</a>
+    <header class="bg-yellow tc pa5 white">
+        <div class="mw4 center pv5">
+            <h1 class="f1 mt0 mb2 tracked-tight">Sassyons</h1>
+            <p class="mb0">A utility-first CSS framework generator like Tachyons and Tailwind</p>
+            <p><a class="white" href="https://github.com/geoffyuen/sassyons">On Github</a></p>
+        </div>
+    </header>
     <main id="main">
-        <h1>Sassyons</h1>
-        <img src="img/350x150.png" alt="">
+        <article class="mw4 center mv6">
+            <header>
+                <h1>Type Scale</h1>
+            </header>
+            <ul class="lh-headline">
+                <li class="mv4 f4 f3-s f2-m f1-l">f1 Lorem ipsum dolor      officia quae, explicabo debitis impedit mollitia placeat odio porro consequatur non voluptas.</li>
+                <li class="mv4 f2">f2 sit amet consectetur</li>
+                <li class="mv4 f3">f3 adipisicing elit. Voluptatum</li>
+                <li class="mv4 f4">f4 quas expedita at</li>
+                <li class="mv4 f5">f5 dolore accusamus? Aut</li>
+                <li class="mv4 f6">f6 asperiores accusantium, architecto</li>
+            </ul>
+        </article>
+        <article class="pv4 bg-ltgray">
+            <div class="mw4 center mv6 ">
+            <header>
+                <h1>Widths</h1>
+            </header>
+            <div class="w-10 outline bg-white pa1 mv1">w-10</div>
+            <div class="w-20 outline bg-white pa1 mv1">w-20</div>
+            <div class="w-100 outline bg-white pa1 mv1">...w-100</div>
+
+            <div class="w-third outline bg-white pa1 mv1">w-third</div>
+            <div class="w-two-thirds outline bg-white pa1 mv1">w-two-thirds</div>
+
+            <div class="w-1-12 outline bg-white pa1 mv1">w-1-12</div>
+            <div class="w-2-12 outline bg-white pa1 mv1">w-2-12</div>
+            <div class="w-3-12 outline bg-white pa1 mv1">w-3-12</div>
+            </div>
+        </article>
         <div class="w-25 bw1 br0 b--black b--solid pa3 tc bg-gray red br-4 mv4">stuff</div>
         <div class="aspect-ratio aspect-ratio--2x1">
-            <div class="aspect-ratio--object flex items-center justify-center bw1 b--solid b--blue shadow-3">
+            <div class="aspect-ratio--object flex items-center justify-center bg-blue">
                 This scales proportionally
             </div>
         </div>
         <button class="bw2 ph2 pv1 b--solid bg-black white">A Button</button>
     </main>
-    <div id="sprites"></div>
+    <div id="spritesx"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.min.js"></script>
 </body>

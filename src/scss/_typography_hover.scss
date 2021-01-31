@@ -2,14 +2,15 @@ $cfg: (
 	(
 		// colors:
 		responsive: false, 
-		values:  cfg(colours),
+		values: cfg(colours),
 		rules: (
 			hover-: (
 				vrules: (
 					color,
 				),
+				post: ":hover",
 			),
 		)
 	),
 );
-@include build_hover();
+@include build();

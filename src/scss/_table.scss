@@ -7,11 +7,12 @@ $cfg: (
 				vrules: (
 					background-color,
 				),
+				post: ":nth-child(odd)",
 			),
 		),
 	),
 );
-@include build_nth();
+@include build();
 @include no_mq {
 	.collapse {
 		border-collapse: collapse;

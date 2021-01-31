@@ -1,8 +1,8 @@
 $cfg: (
 	(
-		// whitespace:
+		// spacing:
 		responsive: true, 
-		values: cfg(whitespace),
+		values: cfg(spacing),
 		rules: (
 			pa: (
 				vrules: (
@@ -127,3 +127,14 @@ $cfg: (
 	)
 );
 @include build();
+
+.ml-auto#{$sfx} {
+	margin-left: auto;
+}
+.mr-auto#{$sfx} {
+	margin-right: auto;
+}
+.center#{$sfx} {
+	margin-left: auto;
+	margin-right: auto;
+}

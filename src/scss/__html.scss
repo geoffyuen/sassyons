@@ -1,0 +1,18 @@
+// html base styles
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: cfg(headline, cfg(line_height));
+}

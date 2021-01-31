@@ -17,3 +17,22 @@ $cfg: (
     ),
 );
 @include build();
+
+.w-3-12#{$sfx} {
+    @extend .w-25#{$sfx}
+}
+.w-4-12#{$sfx} {
+    @extend .w-third#{$sfx}
+}
+.w-6-12#{$sfx} {
+    @extend .w-50#{$sfx}
+}
+.w-8-12#{$sfx} {
+    @extend .w-two-thirds#{$sfx}
+}
+.w-9-12#{$sfx} {
+    @extend .w-75#{$sfx}
+}
+.w-12-12#{$sfx} {
+    @extend .w-100#{$sfx}
+}

@@ -50,11 +50,7 @@ $cfg: (
 	(
 		// leading:
 		responsive: false,
-		values: (
-			copy: 1.4,
-			headline: 1.1,
-			solid: 1,
-		),
+		values: cfg(line_height),
 		rules: (
 			lh-: (
 				vrules: (
