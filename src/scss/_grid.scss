@@ -1,5 +1,7 @@
 .grid {
 	display: grid;
+	grid-template-columns: 1f;
+	grid-template-rows: 1f;
 }
 
 $cfg: (
@@ -12,6 +14,9 @@ $cfg: (
 				(
 					vrules: (
 						gap,
+					),
+					srules: (
+						"grid-template-columns": "1f",
 					),
 				),
 			// grid column gap
@@ -76,6 +81,7 @@ $cfg: (
 			),
 			gcolumn-end-: (
 				vrules: (
+					grid-column-start,
 					grid-column-end,
 				),
 			),
@@ -86,6 +92,7 @@ $cfg: (
 			),
 			grow-end-: (
 				vrules: (
+					grid-row-start,
 					grid-row-end,
 				),
 			),
