@@ -1,0 +1,95 @@
+.grid {
+	display: grid;
+}
+
+$cfg: (
+	(
+		responsive: true,
+		values: cfg(spacing),
+		rules: (
+			// grid gap (columns and rows)
+			ga-:
+				(
+					vrules: (
+						gap,
+					),
+				),
+			// grid column gap
+			gc-:
+				(
+					vrules: (
+						column-gap,
+					),
+				),
+			// grid row gap
+			gr-:
+				(
+					vrules: (
+						row-gap,
+					),
+				),
+		),
+	),
+	(
+		responsive: true,
+		values: (
+			1: 1f,
+			2: repeat(2, 1f),
+			3: repeat(3, 1f),
+			4: repeat(4, 1f),
+			5: repeat(5, 1f),
+			6: repeat(6, 1f),
+		),
+		rules: (
+			// grid columns
+			gcolumns-:
+				(
+					vrules: (
+						grid-template-columns,
+					),
+				),
+			// grid rows
+			grows-:
+				(
+					vrules: (
+						grid-template-rows,
+					),
+				),
+		),
+	),
+	(
+		responsive: true,
+		values: (
+			1: 1,
+			2: 2,
+			3: 3,
+			4: 4,
+			5: 5,
+			6: 6,
+			7: 7,
+		),
+		rules: (
+			gcolumn-start-: (
+				vrules: (
+					grid-column-start,
+				),
+			),
+			gcolumn-end-: (
+				vrules: (
+					grid-column-end,
+				),
+			),
+			grow-start-: (
+				vrules: (
+					grid-row-start,
+				),
+			),
+			grow-end-: (
+				vrules: (
+					grid-row-end,
+				),
+			),
+		),
+	)
+);
+@include build();
