@@ -11,132 +11,146 @@
 </head>
 
 <body class="">
-		<a class="visuallyhidden" href="#main">Skip to Main</a>
-		<header class="flex flex-wrap items-center bg-ltgray ma3 ma4-m br-5 overflow-hidden">
-			<div class="w-100 w-50-s order-1-s"><img class="db" src="https://picsum.photos/1200/1000" alt=""></div>
-			<div class="center w-100 w-50-s mw2 pa3 ph4-s ph5-l order-0-s f5-l">
-				<h1 class="f2 f1-l mt0 mb2 tracked-tight blue fw700">Sassyons</h1>
-				<p class="mb0">A utility-first CSS framework generator like Tachyons and Tailwind written in Sass.</p>
-				<p><a class="" href="https://github.com/geoffyuen/sassyons">On Github</a></p>
-			</div>
-		</header>
-		<main id="main" class="flex items-start">
-				<nav id="page-nav" class="mv6 w-20 sticky top-0">
-					<ul class="f6">
-						<li><a href="#colours">Colours</a></li>
-						<li><a href="#typescale">Typescale</a></li>
-						<li><a href="#widths">Widths</a></li>
-						<li><a href="#heights">Heights</a></li>
+	<a class="visuallyhidden" href="#main">Skip to Main</a>
+	<header class="flex flex-wrap items-center bg-ltgray ma3 ma4-m br-5 overflow-hidden">
+		<div class="w-100 w-50-s order-1-s"><img class="db" src="https://picsum.photos/1200/1000" alt=""></div>
+		<div class="center w-100 w-50-s mw2 pa3 ph4-s ph5-l order-0-s f5-l">
+			<h1 class="f2 f1-l mt0 mb2 tracked-tight blue fw700">Sassyons</h1>
+			<p class="mb0">A utility-first CSS framework generator like Tachyons and Tailwind written in Sass.</p>
+			<p><a class="" href="https://github.com/geoffyuen/sassyons">On Github</a></p>
+		</div>
+	</header>
+	<main id="main" class="flex items-start">
+			<nav id="page-nav" class="mv6 w-20 sticky top-0">
+				<ul class="f6">
+					<li><a href="#colours">Colours</a></li>
+					<li><a href="#typescale">Typescale</a></li>
+					<li><a href="#widths">Widths</a></li>
+					<li><a href="#heights">Heights</a></li>
+				</ul>
+			</nav>
+			<div class="w-80 overflow-x-hidden">
+				<article id="colours" class="mw4 center mv6">
+					<main>
+						<h1>Colours</h1>
+						<p>Text <code class="dib ph2 bg-ltgray">{{ colourname }}</code>,  background colours <code class="dib ph2 bg-ltgray">bg-{{ colourname }}</code> and hover colours <code class="dib ph2 bg-ltgray">hover-{{ colourname }}</code></p>
+					</main>
+					<ul class="list pa0 flex flex-wrap">
+						<li class="outline w-third w-25-m w-20-l pa3 bg-yellow white hover-bg-transparent hover-black trans-ease-in">yellow</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-orange white">orange</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-red white">red</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-green white">green</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-blue white">blue</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-gray white">gray</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-ltgray black">ltgray</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-white black">white</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-black white">black</li>
+						<li class="outline w-third w-25-m w-20-l pa3 bg-transparent black">transparent</li
 					</ul>
-				</nav>
-				<div class="w-80 overflow-x-hidden">
-					<article id="colours" class="mw4 center mv6">
-						<main>
-							<h1>Colours</h1>
-							<p>Text <code class="dib ph2 bg-ltgray">{{ colourname }}</code>,  background colours <code class="dib ph2 bg-ltgray">bg-{{ colourname }}</code> and hover colours <code class="dib ph2 bg-ltgray">hover-{{ colourname }}</code></p>
-						</main>
-						<ul class="list pa0 flex flex-wrap">
-							<li class="outline w-third w-25-m w-20-l pa3 bg-yellow white hover-bg-transparent hover-black trans-ease-in">yellow</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-orange white">orange</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-red white">red</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-green white">green</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-blue white">blue</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-gray white">gray</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-ltgray black">ltgray</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-white black">white</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-black white">black</li>
-							<li class="outline w-third w-25-m w-20-l pa3 bg-transparent black">transparent</li
-						</ul>
-					</article>
-					<article id="typescale" class="mw4 center mv6">
+				</article>
+				<article id="typescale" class="mw4 center mv6">
+					<header>
+						<h1>Type Scale</h1>
+					</header>
+					<ul class="lh-headline">
+						<li class="mv4 f4 f3-s f2-m f1-l">f1 Lorem ipsum dolor</li>
+						<li class="mv4 f2">f2 sit amet consectetur</li>
+						<li class="mv4 f3">f3 adipisicing elit. Voluptatum</li>
+						<li class="mv4 f4">f4 quas expedita at</li>
+						<li class="mv4 f5">f5 dolore accusamus? Aut</li>
+						<li class="mv4 f6">f6 asperiores accusantium, architecto</li>
+					</ul>
+				</article>
+				<article id="widths" class="pv4 bg-ltgray">
+					<div class="mw4 center mv6 ">
 						<header>
-							<h1>Type Scale</h1>
+							<h1>Widths</h1>
 						</header>
-						<ul class="lh-headline">
-							<li class="mv4 f4 f3-s f2-m f1-l">f1 Lorem ipsum dolor</li>
-							<li class="mv4 f2">f2 sit amet consectetur</li>
-							<li class="mv4 f3">f3 adipisicing elit. Voluptatum</li>
-							<li class="mv4 f4">f4 quas expedita at</li>
-							<li class="mv4 f5">f5 dolore accusamus? Aut</li>
-							<li class="mv4 f6">f6 asperiores accusantium, architecto</li>
-						</ul>
-					</article>
-					<article id="widths" class="pv4 bg-ltgray">
-						<div class="mw4 center mv6 ">
-							<header>
-								<h1>Widths</h1>
-							</header>
-							<section>
-								<h2>Percentage Widths</h2>
-								<div class="w-10 bg-blue white pa3 mv1">w-10</div>
-								<div class="w-20 bg-blue white pa3 mv1">w-20</div>
-								<div class="w-100 bg-blue white pa3 mv1">...w-100</div>
-								
-								<div class="w-third bg-blue white pa3 mv1">w-third</div>
-								<div class="w-two-thirds bg-blue white pa3 mv1">w-two-thirds</div>
-								
-								<h3>Classic 12-column grid</h3>
-								<div class="w-1-12 bg-blue white pa3 mv1">w-1-12</div>
-								<div class="w-2-12 bg-blue white pa3 mv1">w-2-12</div>
-								<div class="w-3-12 bg-blue white pa3 mv1">w-3-12</div>
-							</section>
-							<section>
-								<h2>Max-widths</h2>
-								<div class="mw1 bg-blue white pa3 mv1">mw1</div>
-								<div class="mw2 bg-blue white pa3 mv1">mw2</div>
-								<div class="mw3 bg-blue white pa3 mv1">mw3</div>
-								<div class="mw4 bg-blue white pa3 mv1">mw4</div>
-								<div class="mw5 bg-blue white pa3 mv1">mw5</div>
-							</section>
-						</div>
-					</article>
-					<article id="heights" class="pv4">
-						<header>
-							<h1>Heights</h1>
-						</header>
-						<div class="flex items-start nh2">
-							<div class="h1 bg-red white ph3 mv1 mh1">h1</div>
-							<div class="h2 bg-red white pv1 ph3 mv1 mh1">h2</div>
-							<div class="h3 bg-red white pv1 ph3 mv1 mh1">h3</div>
-							<div class="h4 bg-red white pv1 ph3 mv1 mh1">h4</div>
-							<div class="h5 bg-red white pv1 ph3 mv1 mh1">h5</div>
-
-							<div class="vh-25">
-								<div class="h-25 bg-green white ph3 mv1 mh1">h-25</div>
-							</div>
-							<div class="vh-25">
-								<div class="h-50 bg-green white pv1 ph3 mv1 mh1">h-50</div>
-							</div>
-							<div class="vh-25">
-								<div class="h-75 bg-green white pv1 ph3 mv1 mh1">h-75</div>
-							</div>
-							<div class="vh-25">
-								<div class="h-100 bg-green white pv1 ph3 mv1 mh1">h-100</div>
-							</div>
-							<div class="vh-25">
-								<div class="h-auto bg-green white pv1 ph3 mv1 mh1">h-auto</div>
-							</div>
-							<div class="vh-25">
-								<div class="h-inherit bg-green white pv1 ph3 mv1 mh1">h-inherit</div>
-							</div>
-
-
-							<div class="vh-25 bg-blue white ph3 mv1 mh1">vh-25</div>
-							<div class="vh-50 bg-blue white ph3 mv1 mh1">vh-50</div>
-							<div class="vh-75 bg-blue white ph3 mv1 mh1">vh-75</div>
-							<div class="vh-100 bg-blue white ph3 mv1 mh1">vh-100</div>
-
-						</div>
-					</article>
-					<div class="w-25 bw1 br0 b--black b--solid pa3 tc bg-gray red br-4 mv4">stuff</div>
-					<div class="aspect-ratio aspect-ratio--2x1">
-						<div class="aspect-ratio--object flex items-center justify-center bg-blue">
-							This scales proportionally
-						</div>
+						<section>
+							<h2>Percentage Widths</h2>
+							<div class="w-10 bg-blue white pa3 mv1">w-10</div>
+							<div class="w-20 bg-blue white pa3 mv1">w-20</div>
+							<div class="w-100 bg-blue white pa3 mv1">...w-100</div>
+							
+							<div class="w-third bg-blue white pa3 mv1">w-third</div>
+							<div class="w-two-thirds bg-blue white pa3 mv1">w-two-thirds</div>
+							
+							<h3>Classic 12-column grid</h3>
+							<div class="w-1-12 bg-blue white pa3 mv1">w-1-12</div>
+							<div class="w-2-12 bg-blue white pa3 mv1">w-2-12</div>
+							<div class="w-3-12 bg-blue white pa3 mv1">w-3-12</div>
+						</section>
+						<section>
+							<h2>Max-widths</h2>
+							<div class="mw1 bg-blue white pa3 mv1">mw1</div>
+							<div class="mw2 bg-blue white pa3 mv1">mw2</div>
+							<div class="mw3 bg-blue white pa3 mv1">mw3</div>
+							<div class="mw4 bg-blue white pa3 mv1">mw4</div>
+							<div class="mw5 bg-blue white pa3 mv1">mw5</div>
+						</section>
 					</div>
-					<button class="bw2 ph2 pv1 b--solid bg-black white">A Button</button>
+				</article>
+				<article id="heights" class="pv4">
+					<header>
+						<h1>Heights</h1>
+					</header>
+					<div class="flex items-start nh2">
+						<div class="h1 bg-red white ph3 mv1 mh1">h1</div>
+						<div class="h2 bg-red white pv1 ph3 mv1 mh1">h2</div>
+						<div class="h3 bg-red white pv1 ph3 mv1 mh1">h3</div>
+						<div class="h4 bg-red white pv1 ph3 mv1 mh1">h4</div>
+						<div class="h5 bg-red white pv1 ph3 mv1 mh1">h5</div>
+
+						<div class="vh-25">
+							<div class="h-25 bg-green white ph3 mv1 mh1">h-25</div>
+						</div>
+						<div class="vh-25">
+							<div class="h-50 bg-green white pv1 ph3 mv1 mh1">h-50</div>
+						</div>
+						<div class="vh-25">
+							<div class="h-75 bg-green white pv1 ph3 mv1 mh1">h-75</div>
+						</div>
+						<div class="vh-25">
+							<div class="h-100 bg-green white pv1 ph3 mv1 mh1">h-100</div>
+						</div>
+						<div class="vh-25">
+							<div class="h-auto bg-green white pv1 ph3 mv1 mh1">h-auto</div>
+						</div>
+						<div class="vh-25">
+							<div class="h-inherit bg-green white pv1 ph3 mv1 mh1">h-inherit</div>
+						</div>
+
+
+						<div class="vh-25 bg-blue white ph3 mv1 mh1">vh-25</div>
+						<div class="vh-50 bg-blue white ph3 mv1 mh1">vh-50</div>
+						<div class="vh-75 bg-blue white ph3 mv1 mh1">vh-75</div>
+						<div class="vh-100 bg-blue white ph3 mv1 mh1">vh-100</div>
+
+					</div>
+				</article>
+				<article id="grid" class="mw4 center mv6">
+					<header>
+						<h1>Grid</h1>
+					</header>
+					<div class="grid ga-4 gcolumns-1 gcolumns-2-s gcolumns-4-m">
+						<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem ad a natus libero labore praesentium maxime necessitatibus ipsam excepturi doloribus alias, veniam nam molestiae? Quam alias dolorem aspernatur debitis?</div>
+						<div>Ad inventore soluta obcaecati tempora nam temporibus facilis magni. Expedita, asperiores incidunt. Necessitatibus est, reprehenderit assumenda ex, mollitia ab, ea amet dicta molestias quisquam reiciendis nihil repudiandae vitae aperiam nemo.</div>
+						<div>Saepe commodi rem consequatur debitis optio totam eligendi, non at possimus aliquam a! Harum reiciendis quos, nulla distinctio rem impedit inventore. Debitis tenetur veritatis quos eligendi aspernatur facilis, impedit itaque.</div>
+						<div>Aliquam laudantium nam nisi veniam inventore dolor blanditiis eligendi distinctio perferendis veritatis, id laborum ipsum quidem perspiciatis, dolorem commodi sed quas facere aut natus temporibus quia fugit minus quis? Fuga?</div>
+						<div>Repellat, illum recusandae assumenda obcaecati ea maxime molestiae magni odit nulla ipsum vel dolores doloremque alias nemo, numquam praesentium labore similique! Omnis eum quas eaque eius veniam nihil dolore nisi.</div>
+						<div>Vero maxime harum, non nemo obcaecati voluptas eaque dolorum quos repudiandae dolores labore sed recusandae animi aut eius necessitatibus perspiciatis alias quisquam laboriosam nam! Accusamus architecto fugiat unde nam saepe.</div>
+					</div>
+				</article>
+				<div class="w-25 bw1 br0 b--black b--solid pa3 tc bg-gray red br-4 mv4">stuff</div>
+				<div class="aspect-ratio aspect-ratio--2x1">
+					<div class="aspect-ratio--object flex items-center justify-center bg-blue">
+						This scales proportionally
+					</div>
 				</div>
-		</main>
+				<button class="bw2 ph2 pv1 b--solid bg-black white">A Button</button>
+			</div>
+	</main>
+	
 	<div id="spritesx"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="main.min.js"></script>

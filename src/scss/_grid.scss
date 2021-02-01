@@ -34,11 +34,11 @@ $cfg: (
 		responsive: true,
 		values: (
 			1: 1f,
-			2: repeat(2, 1f),
-			3: repeat(3, 1f),
-			4: repeat(4, 1f),
-			5: repeat(5, 1f),
-			6: repeat(6, 1f),
+			2: repeat(2, 1fr),
+			3: repeat(3, 1fr),
+			4: repeat(4, 1fr),
+			5: repeat(5, 1fr),
+			6: repeat(6, 1fr),
 		),
 		rules: (
 			// grid columns
