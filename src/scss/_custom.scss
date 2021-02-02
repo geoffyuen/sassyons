@@ -1,5 +1,5 @@
 @include no_mq {
-	.visuallyhidden:not(:focus) {
+	.sr, .sr-focus:not(:focus) {
 		position: absolute;
 		width: 1px;
 		height: 1px;
@@ -9,5 +9,11 @@
 		clip: rect(0, 0, 0, 0);
 		white-space: nowrap;
 		border-width: 0;
+	}
+	.pointer-auto {
+		pointer-events: auto;
+	}
+	.pointer-none {
+		pointer-events: none;
 	}
 }

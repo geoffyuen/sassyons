@@ -9,3 +9,23 @@
 		display: block;
 	}
 }
+
+$cfg: (
+	(
+		responsive: true, 
+		values: (
+			cover: cover,
+			fill: fill,
+			contain: contain,
+			scale-down: scale-down,
+		),
+		rules: (
+			object-: (
+				vrules: (
+					object-fit,
+				),
+			),
+		),
+	),
+);
+@include build();
