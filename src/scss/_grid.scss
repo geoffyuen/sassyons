@@ -118,3 +118,7 @@ $cfg: (
 	),
 );
 @include build();
+
+.gcolumns-auto#{$mq} {
+	grid-auto-flow: column;
+}
