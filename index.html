@@ -11,7 +11,7 @@
 </head>
 
 <body class="">
-	<a class="visuallyhidden" href="#main">Skip to Main</a>
+	<a class="sr-focus" href="#main">Skip to Main</a>
 	<header class="flex flex-wrap items-center bg-ltgray ma3 ma4-m br-5 overflow-hidden">
 		<div class="w-100 w-50-s order-1-s"><img class="db" src="https://picsum.photos/1200/1000" alt=""></div>
 		<div class="center w-100 w-50-s mw2 pa3 ph4-s ph5-l order-0-s f5-l">
@@ -20,9 +20,10 @@
 			<p><a class="" href="https://github.com/geoffyuen/sassyons">On Github</a></p>
 		</div>
 	</header>
-	<main id="main" class="flex items-start">
-			<nav id="page-nav" class="dn db-s mv6 w-20-m w-10-l sticky top-0">
-				<ul class="f6">
+	<main id="main" class="grid gcolumns-auto">
+
+			<nav id="page-nav" class="dn db-s mv6 ph4 mw1">
+				<ul class="f6 sticky top-3 ph0">
 					<li><a href="#colours">Colours</a></li>
 					<li><a href="#typescale">Typescale</a></li>
 					<li><a href="#widths">Widths</a></li>
@@ -30,23 +31,27 @@
 					<li><a href="#grid">Grid</a></li>
 				</ul>
 			</nav>
-			<div class="w-80-m w-90-l overflow-x-hidden">
+
+			<div class="overflow-x-hidden">
 				<article id="colours" class="mw5 ph4 center mv6">
 					<main>
 						<h1>Colours</h1>
 						<p>Text <code class="dib ph2 bg-ltgray">{{ colourname }}</code>,  background colours <code class="dib ph2 bg-ltgray">bg-{{ colourname }}</code> and hover colours <code class="dib ph2 bg-ltgray">hover-{{ colourname }}</code></p>
 					</main>
-					<ul class="list pa0 flex flex-wrap">
-						<li class="outline w-third w-25-m w-20-l pa3 bg-yellow white hover-bg-transparent hover-black trans-ease-in">yellow</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-orange white">orange</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-red white">red</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-green white">green</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-blue white">blue</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-gray white">gray</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-ltgray black">ltgray</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-white black">white</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-black white">black</li>
-						<li class="outline w-third w-25-m w-20-l pa3 bg-transparent black">transparent</li
+					<ul class="twig list pa0 flex flex-wrap">
+						{% for color in [
+							['yellow','white'], 
+							['orange','white'],
+							['red','white'],
+							['green','white'],
+							['blue','white'],
+							['gray','white'],
+							['ltgray','black'],
+							['white','black'],
+							['transparent','black'],
+						] %}
+							<li class="outline w-third w-25-m w-20-l pa3 bg-{{color[0]}} {{color[1]}}  trans-ease-in">{{color[0]}}</li>
+						{% endfor %}
 					</ul>
 				</article>
 				<article id="typescale" class="mw5 ph4 center mv6">
@@ -63,31 +68,34 @@
 					</ul>
 				</article>
 				<article id="widths" class="mw5 ph4 pv4 center bg-ltgray">
-					<div class="mw5 ph4 center mv6 ">
+					<div class="mw5 center ">
 						<header>
 							<h1>Widths</h1>
 						</header>
 						<section>
 							<h2>Percentage Widths</h2>
-							<div class="w-10 bg-blue white pa3 mv1">w-10</div>
-							<div class="w-20 bg-blue white pa3 mv1">w-20</div>
-							<div class="w-100 bg-blue white pa3 mv1">...w-100</div>
+							<div class="twig f6">
+								{% for width in 1..10 %}
+									<div class="w-{{width}}0 bg-blue white pa3 mv1">w-{{width}}0</div>
+								{% endfor %}
+
+								{% for width in ["third", "two-thirds"] %}
+									<div class="w-{{width}} bg-blue white pa3 mv1">w-{{width}}</div>
+								{% endfor %}
 							
-							<div class="w-third bg-blue white pa3 mv1">w-third</div>
-							<div class="w-two-thirds bg-blue white pa3 mv1">w-two-thirds</div>
-							
-							<h3>Classic 12-column grid</h3>
-							<div class="w-1-12 bg-blue white pa3 mv1">w-1-12</div>
-							<div class="w-2-12 bg-blue white pa3 mv1">w-2-12</div>
-							<div class="w-3-12 bg-blue white pa3 mv1">w-3-12</div>
+								<h3>Classic 12-column grid</h3>
+								{% for width in 1..12 %}
+									<div class="w-{{width}}-12 bg-blue white pa3 mv1">w-{{width}}-12</div>
+								{% endfor %}
+							</div>
 						</section>
 						<section>
 							<h2>Max-widths</h2>
-							<div class="mw1 bg-blue white pa3 mv1">mw1</div>
-							<div class="mw2 bg-blue white pa3 mv1">mw2</div>
-							<div class="mw3 bg-blue white pa3 mv1">mw3</div>
-							<div class="mw4 bg-blue white pa3 mv1">mw4</div>
-							<div class="mw5 bg-blue white pa3 mv1">mw5</div>
+							<div class="twig f6">
+								{% for width in 1..5 %}
+									<div class="mw{{width}} bg-blue white pa3 mv1">mw{{width}}</div>
+								{% endfor %}
+							</div>
 						</section>
 					</div>
 				</article>
@@ -95,7 +103,7 @@
 					<header>
 						<h1>Heights</h1>
 					</header>
-					<div class="flex items-start nh2">
+					<div class="flex items-start nh2 f6">
 						<div class="h1 bg-red white ph3 mv1 mh1">h1</div>
 						<div class="h2 bg-red white pv1 ph3 mv1 mh1">h2</div>
 						<div class="h3 bg-red white pv1 ph3 mv1 mh1">h3</div>
@@ -121,11 +129,13 @@
 							<div class="h-inherit bg-green white pv1 ph3 mv1 mh1">h-inherit</div>
 						</div>
 
+					</div>
+					<div class="flex items-start nh2 f6">
 
-						<div class="vh-25 bg-blue white ph3 mv1 mh1">vh-25</div>
-						<div class="vh-50 bg-blue white ph3 mv1 mh1">vh-50</div>
-						<div class="vh-75 bg-blue white ph3 mv1 mh1">vh-75</div>
-						<div class="vh-100 bg-blue white ph3 mv1 mh1">vh-100</div>
+						<div class="vh-25 bg-blue white ph3 pv2 mv1 mh1">vh-25</div>
+						<div class="vh-50 bg-blue white ph3 pv2 mv1 mh1">vh-50</div>
+						<div class="vh-75 bg-blue white ph3 pv2 mv1 mh1">vh-75</div>
+						<div class="vh-100 bg-blue white ph3 pv2 mv1 mh1">vh-100</div>
 
 					</div>
 				</article>
@@ -148,7 +158,15 @@
 	
 	<div id="spritesx"></div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="main.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twig.js/1.15.4/twig.min.js" integrity="sha512-zPrJDVxUaY6Qy2gi7gjHBw9Og/XQekExTDl3eFy2IibT0MVhx7vtsbjzPorSGp85+7uByxqzHyph77CRuYv5Kg==" crossorigin="anonymous"></script>
+	<!--<script src="main.min.js"></script>-->
+	<script>
+		$('.twig').each(function(){
+			var template = Twig.twig({
+				data: $(this).html()
+			});
+			$(this).html( template.render() );
+		});
+	</script>
 </body>
-
 </html>
