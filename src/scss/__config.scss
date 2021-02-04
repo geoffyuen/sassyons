@@ -6,6 +6,7 @@ $sassy: (
 		red: #ca1551,
 		green: #03cea4,
 		blue: #345995,
+		dkgray: #444,
 		gray: #888,
 		ltgray: #f8f8f8,
 		white: #fff,
@@ -166,9 +167,9 @@ $sassy: (
     ),
 	// shadow-*
 	box_shadows: (
-		1: 0 0 10px black,
-		2: 1px 1px 0 black,
-		3: 2px 2px 3px rgba(black, 0.5),
+		1: 0 0 10px rgba(0,0,0,.2),
+		2: 1px 1px 0 rgba(0,0,0,.2),
+		3: 2px 2px 3px rgba(0,0,0,.2),
     ),
     // stroke-*
 	svg_stroke_widths: (

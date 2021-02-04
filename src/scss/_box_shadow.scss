@@ -1,11 +1,7 @@
 $cfg: (
 	(
 		responsive: false, 
-		values: (
-			1: 0 0 10px black,
-			2: 1px 1px 0 black,
-			3: 2px 2px 3px rgba(c(black), 0.5),
-		),
+		values: cfg(box_shadows),
 		rules: (
 			shadow-: (
 				vrules: (

@@ -13,7 +13,7 @@
 <body class="">
 	<a class="sr-focus" href="#main">Skip to Main</a>
 	<header class="flex flex-wrap items-center bg-ltgray ma3 ma4-m br-5 overflow-hidden">
-		<div class="w-100 w-50-s order-1-s"><img class="db" src="https://picsum.photos/1200/1000" alt=""></div>
+		<div class="w-100 w-50-s order-1-s"><img class="db w-100" src="https://picsum.photos/1200/1000" alt=""></div>
 		<div class="center w-100 w-50-s mw2 pa3 ph4-s ph5-l order-0-s f5-l">
 			<h1 class="f2 f1-l mt0 mb2 tracked-tight blue fw700">Sassyons</h1>
 			<p class="mb0">A utility-first CSS framework generator like Tachyons and Tailwind written in Sass.</p>
@@ -33,12 +33,16 @@
 			</nav>
 
 			<div class="overflow-x-hidden">
+
+
 				<article id="colours" class="mw5 ph4 center mv6">
+					
 					<main>
 						<h1>Colours</h1>
 						<p>Text <code class="dib ph2 bg-ltgray">{{ colourname }}</code>,  background colours <code class="dib ph2 bg-ltgray">bg-{{ colourname }}</code> and hover colours <code class="dib ph2 bg-ltgray">hover-{{ colourname }}</code></p>
 					</main>
-					<ul class="twig list pa0 flex flex-wrap">
+
+					<ul class="f6 twig list pa0 grid gcolumns-2 gcolumns-4-m gcolumns-6-l ga-1">
 						{% for color in [
 							['yellow','white'], 
 							['orange','white'],
@@ -48,12 +52,16 @@
 							['gray','white'],
 							['ltgray','black'],
 							['white','black'],
+							['black','white'],
 							['transparent','black'],
 						] %}
-							<li class="outline w-third w-25-m w-20-l pa3 bg-{{color[0]}} {{color[1]}}  trans-ease-in">{{color[0]}}</li>
+							<li class="pa3 bg-{{color[0]}} {{color[1]}} shadow-1 trans-ease-in hover-bg-black hover-white">{{color[0]}}</li>
 						{% endfor %}
 					</ul>
+
 				</article>
+
+
 				<article id="typescale" class="mw5 ph4 center mv6">
 					<header>
 						<h1>Type Scale</h1>
