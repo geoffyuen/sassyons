@@ -4,6 +4,12 @@
 	// grid-template-rows: 1f;
 }
 
+.gcolumns-auto#{$mq} {
+	grid-auto-flow: column;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
 $cfg: (
 	(
 		responsive: true,
@@ -118,7 +124,3 @@ $cfg: (
 	),
 );
 @include build();
-
-.gcolumns-auto#{$mq} {
-	grid-auto-flow: column;
-}
