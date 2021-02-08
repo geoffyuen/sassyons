@@ -119,10 +119,7 @@ $cfg: (
 	(
 		// tracking:
 		responsive: false,
-		values: (
-			tight: -0.05em,
-			loose: 1.5em,
-		),
+		values: cfg(letter_spacing),
 		rules: (
 			tracked-: (
 				vrules: (

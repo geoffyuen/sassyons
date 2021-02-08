@@ -46,6 +46,11 @@ $sassy: (
 		800: 800,
 		900: 900,
 	),
+	// tracked-*
+	letter_spacing: (
+		tight: -.05em,
+		loose: .05em,
+	),
 	indent: 1em,
     // p*, pa*, pl*, pr*, etc
     // m*, ma*, ml*, mr*, etc

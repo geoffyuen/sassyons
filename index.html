@@ -9,7 +9,6 @@
 	<title>Sassyons</title>
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>😝</text></svg>">
 </head>
-
 <body class="">
 	<a class="sr-focus" href="#main">Skip to Main</a>
 	<header class="flex flex-wrap items-center bg-ltgray ma3 ma4-m br-5 overflow-hidden">
@@ -112,39 +111,20 @@
 						<h1>Heights</h1>
 					</header>
 					<div class="flex items-start nh2 f6">
-						<div class="h1 bg-red white ph3 mv1 mh1">h1</div>
-						<div class="h2 bg-red white pv1 ph3 mv1 mh1">h2</div>
-						<div class="h3 bg-red white pv1 ph3 mv1 mh1">h3</div>
-						<div class="h4 bg-red white pv1 ph3 mv1 mh1">h4</div>
-						<div class="h5 bg-red white pv1 ph3 mv1 mh1">h5</div>
+						<div class="twig flex items-start vh-50 w-100">
+							{% for height in 1..5 %}
+								<div class="h{{height}} w-2-12 bg-red white ph3 mv1 mh1 tc">h{{height}}</div>
+							{% endfor %}
 
-						<div class="vh-25">
-							<div class="h-25 bg-green white ph3 mv1 mh1">h-25</div>
+							{% for height in [25,50,75,100,'auto','inherit'] %}
+								<div class="h-{{height}} w-2-12 bg-green white ph3 mv1 mh1 tc">h-{{height}}</div>
+							{% endfor %}
 						</div>
-						<div class="vh-25">
-							<div class="h-50 bg-green white pv1 ph3 mv1 mh1">h-50</div>
-						</div>
-						<div class="vh-25">
-							<div class="h-75 bg-green white pv1 ph3 mv1 mh1">h-75</div>
-						</div>
-						<div class="vh-25">
-							<div class="h-100 bg-green white pv1 ph3 mv1 mh1">h-100</div>
-						</div>
-						<div class="vh-25">
-							<div class="h-auto bg-green white pv1 ph3 mv1 mh1">h-auto</div>
-						</div>
-						<div class="vh-25">
-							<div class="h-inherit bg-green white pv1 ph3 mv1 mh1">h-inherit</div>
-						</div>
-
 					</div>
-					<div class="flex items-start nh2 f6">
-
-						<div class="vh-25 bg-blue white ph3 pv2 mv1 mh1">vh-25</div>
-						<div class="vh-50 bg-blue white ph3 pv2 mv1 mh1">vh-50</div>
-						<div class="vh-75 bg-blue white ph3 pv2 mv1 mh1">vh-75</div>
-						<div class="vh-100 bg-blue white ph3 pv2 mv1 mh1">vh-100</div>
-
+					<div class="twig flex items-start nh2 f6 w-50">
+						{% for height in [25,50,75,100,] %}
+							<div class="vh-{{height}} w-2-12 bg-blue white ph3 mv1 mh1">vh-{{height}}</div>
+						{% endfor %}
 					</div>
 				</article>
 				<article id="grid" class="mw5 ph4 center mv6">
@@ -169,6 +149,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twig.js/1.15.4/twig.min.js" integrity="sha512-zPrJDVxUaY6Qy2gi7gjHBw9Og/XQekExTDl3eFy2IibT0MVhx7vtsbjzPorSGp85+7uByxqzHyph77CRuYv5Kg==" crossorigin="anonymous"></script>
 	<!--<script src="main.min.js"></script>-->
 	<script>
+		var csstwig = Twig.twig({
+			data: $('#css').html()
+		});
 		$('.twig').each(function(){
 			var template = Twig.twig({
 				data: $(this).html()
