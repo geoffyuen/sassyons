@@ -83,16 +83,16 @@
 							<h2>Percentage Widths</h2>
 							<div class="twig f6">
 								{% for width in 1..10 %}
-									<div class="w-{{width}}0 bg-blue white pa3 mv1">w-{{width}}0</div>
+									<div class="w-{{width}}0 bg-red white pa3 mv1">w-{{width}}0</div>
 								{% endfor %}
 
 								{% for width in ["third", "two-thirds"] %}
-									<div class="w-{{width}} bg-blue white pa3 mv1">w-{{width}}</div>
+									<div class="w-{{width}} bg-red white pa3 mv1">w-{{width}}</div>
 								{% endfor %}
 							
 								<h3>Classic 12-column grid</h3>
 								{% for width in 1..12 %}
-									<div class="w-{{width}}-12 bg-blue white pa3 mv1">w-{{width}}-12</div>
+									<div class="w-{{width}}-12 bg-green white pa3 mv1">w-{{width}}-12</div>
 								{% endfor %}
 							</div>
 						</section>
@@ -138,6 +138,29 @@
 						<div>Aliquam laudantium nam nisi veniam inventore dolor blanditiis eligendi distinctio perferendis veritatis, id laborum ipsum quidem perspiciatis, dolorem commodi sed quas facere aut natus temporibus quia fugit minus quis? Fuga?</div>
 						<div>Repellat, illum recusandae assumenda obcaecati ea maxime molestiae magni odit nulla ipsum vel dolores doloremque alias nemo, numquam praesentium labore similique! Omnis eum quas eaque eius veniam nihil dolore nisi.</div>
 						<div>Vero maxime harum, non nemo obcaecati voluptas eaque dolorum quos repudiandae dolores labore sed recusandae animi aut eius necessitatibus perspiciatis alias quisquam laboriosam nam! Accusamus architecto fugiat unde nam saepe.</div>
+					</div>
+				</article>
+
+				<article id="padding" class="mw5 ph4 center mv6">
+					<header>
+						<h1>Padding</h1>
+					</header>
+					<div class="twig grid ga-4 gcolumns-1 gcolumns-2-s gcolumns-3-m items-start tc f6">
+						{% for pad in 1..6 %}
+						<div class="bg-red pa{{pad}}">
+							<div class="bg-white pa2">pa{{pad}}</div>
+						</div>
+						{% endfor %}
+					</div>
+					<header>
+						<h1>Margin</h1>
+					</header>
+					<div class="twig grid ga-4 gcolumns-1 gcolumns-2-s gcolumns-3-m items-start tc f6">
+						{% for pad in 1..6 %}
+						<div class="bg-green">
+							<div class="bg-white ma{{pad}} pa2">ma{{pad}}</div>
+						</div>
+						{% endfor %}
 					</div>
 				</article>
 				

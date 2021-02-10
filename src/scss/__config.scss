@@ -1,18 +1,23 @@
 $sassy: (
-    // *, bg-*, hover-*, hover-bg-*, b--*, fill-*, stroke-*
 	colours: (
 		yellow: #eac435,
 		orange: #fb4d3d,
 		red: #ca1551,
 		green: #03cea4,
 		blue: #345995,
+		ltblue: #0081C2,
 		dkgray: #444,
 		gray: #888,
 		ltgray: #f8f8f8,
 		white: #fff,
 		black: #000,
 		transparent: transparent,
-	),
+	)
+);
+// We defined the colours above so we can use our colour grabbing mixin (c(colourname)) down here in gradients, table stripes:
+$sassy: (
+    // *, bg-*, hover-*, hover-bg-*, b--*, fill-*, stroke-*
+	colours: cfg(colours),
 	// f*
 	font_sizes: (
 		1: 4em,
@@ -172,9 +177,9 @@ $sassy: (
     ),
 	// shadow-*
 	box_shadows: (
-		1: 0 0 10px rgba(0,0,0,.2),
-		2: 1px 1px 0 rgba(0,0,0,.2),
-		3: 2px 2px 3px rgba(0,0,0,.2),
+		1: 0 0 10px rgba(c(black),.2),
+		2: 1px 1px 0 rgba(c(black),.2),
+		3: 2px 2px 3px rgba(c(black),.2),
     ),
     // stroke-*
 	svg_stroke_widths: (
@@ -193,10 +198,10 @@ $sassy: (
     ),
     // gradient-*
 	gradients: (
-		blue: "linear-gradient(#4570B0, #0081C2)",
-		blue-reversed: "linear-gradient(#0081C2,#4570B0)",
-		light-blue: "linear-gradient(#76D3FE, #008AE0)",
-		light-blue-reversed: "linear-gradient(#008AE0, #76D3FE)",
+		blue: linear-gradient(c(blue), c(ltblue)),
+		blue-reversed: linear-gradient(c(ltblue),c(blue)),
+		light-blue: linear-gradient(c(white), c(ltblue)),
+		light-blue-reversed: linear-gradient(c(ltblue), c(white)),
     ),
     // o-*
 	opacity: (
@@ -236,7 +241,7 @@ $sassy: (
 	),
 	// stripe-*
 	table_stripe: (
-		light: #aaa,
-		dark: #333
+		light: c(ltgray),
+		dark: c(gray),
 	),
 );
